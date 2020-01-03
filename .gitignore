@@ -1,7 +1,50 @@
-/_site/
-_site/
-.sass-cache/
-.jekyll-cache
+### Jekyll ###
+_site
+.sass-cache
 .jekyll-metadata
-Gemfile
 Gemfile.lock
+
+
+### Gulp ###
+package.json
+/node_modules/
+
+
+### Compiled Source ###
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+
+### Compressed Packages ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+
+### Logs and Databases ###
+*.log
+*.sql
+*.sqlite
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# copied from https://gist.github.com/bradonomics/cf5984b6799da7fdfafd
