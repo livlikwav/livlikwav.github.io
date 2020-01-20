@@ -1,11 +1,12 @@
 ﻿---
-title:  "is-Java-call-by-value-or-call-by-reference"
+title:  "자바는 Call by Value일까, Call by Reference일까?"
 excerpt: "Java는 인자전달방식은 무엇일까?"
 
 categories:
   - Java
 tags:
-  - Java -algorithm
+  - Java
+  - algorithm
 last_modified_at: 2020-01-20TO20:00:00-21:00:00
 ---
 
@@ -19,14 +20,14 @@ last_modified_at: 2020-01-20TO20:00:00-21:00:00
 # 출처
 - [자바의 아규먼트 전달 방식](https://brunch.co.kr/@kd4/2)
 - [Is Java “pass-by-reference” or “pass-by-value”?](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
-- [ Java 인자 전달 방식: Call-by-{Value | Reference}?](http://mussebio.blogspot.com/2012/05/java-call-by-valuereference.html)
+- [Java 인자 전달 방식: Call by Value or Reference?](http://mussebio.blogspot.com/2012/05/java-call-by-valuereference.html)
 
 # 1번째 글
 call by value 
-> = 값 복사 = 깊은 복사 = deep copy = 객체의 실체값 복사
+> 값 복사 = 깊은 복사 = deep copy = 객체의 실체값 복사
 
 call by reference 
-> = 참조 복사 = 얕은 복사 = shallow copy = 객체의 참조값(주소값) 복사
+> 참조 복사 = 얕은 복사 = shallow copy = 객체의 참조값(주소값) 복사
 
 자바는 언제나 'call-by-value'이다.
 헷갈릴 수 있는 것은, 말 그대로 value를 넘기기 때문에
@@ -63,6 +64,7 @@ Java is always  **pass-by-value**. Unfortunately, when we pass the value of an o
 
 It goes like this:
 > 이것은 다음 코드로 설명할 수 있다.
+
 ```
 public static void main(String[] args) {
     Dog aDog = new Dog("Max");
@@ -133,10 +135,10 @@ In the above example,  `Fifi`  is the dog's name after call to  `foo(aDog)`  bec
 ### 사전지식
 메서드나 함수의 인자 전달 설명할 때 항상 등장하는 단어
 parameter
-> = formal parameter (형식인자)
+> formal parameter (형식인자)
 
 argument
-> = actual-parameter (실인자)
+> actual-parameter (실인자)
 
 **Syntax와 Semantics란?**
 Syntax
@@ -146,10 +148,12 @@ Semantics
 > 컴파일러가 구문(Syntax)를 분석한 뒤 해석하여 실제로 동작에 사용되는 명령어를 생산해 내는데 사용되는 지침(모델)이다.
 
 예제)
-`//Case1.`
-`int`  `primitiveIntVar =` `1024``;`
-`//Case2.`
-`String whoAreYou =` `"It's me! Uncle Bob"``;`
+```
+//Case1.
+int  primitiveIntVar = 1024;
+//Case2.
+String whoAreYou = "It's me! Uncle Bob";
+```
 
 **두 case의 Syntax는 거의 비슷하다**
 > Syntax는 말그대로 언어의 구문 규칙, 작성 문법이므로 하나의 변수에 값을 대입하는 형태를, 두 case 동일하게 띄고 있으므로 거의 비슷하다.
