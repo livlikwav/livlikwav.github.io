@@ -1,12 +1,12 @@
 ﻿---
-title:  "자바는 Call by Value일까, Call by Reference일까?"
-excerpt: "Java는 인자전달방식은 무엇일까?"
+title:  "Java는 Call by Value일까, Call by Reference일까?"
+excerpt: "Java의 인자전달방식은 무엇일까?"
 
 categories:
   - Java
 tags:
   - Java
-  - algorithm
+  - Algorithm
 last_modified_at: 2020-01-20TO20:00:00-21:00:00
 ---
 
@@ -190,7 +190,7 @@ Java에서 말하는 reference는 참조자료형 변수인 레퍼런스 변수�
 2. 함수에 어떤 종류의 값을 통과시킬지 결정하는 것이다.
 [https://ko.wikipedia.org/wiki/평가전략](https://ko.wikipedia.org/wiki/%ED%8F%89%EA%B0%80_%EC%A0%84%EB%9E%B5_(%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D))
 
-### (휴식 타임 ㅎㅎ) 
+### 추신
 **제임스 고슬링**
 자바를 최초 개발하여 '자바의 아버지'라고 불린다.
 가장 영향력 있는 프로그래머들 가운데 한 사람이다.

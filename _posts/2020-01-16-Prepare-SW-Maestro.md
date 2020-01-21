@@ -3,9 +3,9 @@ title:  "SW마에스트로 준비 - 10기 합격 후기 분석"
 excerpt: "SW마에스트로 10기 합격자 3분의 합격 후기글을 읽고 정리해보았습니다."
 
 categories:
-  - SW마에스트로
+  - SW Maestro
 tags:
-  - SW마에스트로 - 정보
+  - SW Maestro
 last_modified_at: 2020-01-16TO10:30:00-11:45:00
 ---
 # 목차
