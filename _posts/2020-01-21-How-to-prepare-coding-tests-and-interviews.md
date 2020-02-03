@@ -16,7 +16,7 @@ last_modified_at: 2020-01-21TO11:38:00-12:30
 - [알고리즘 꼭 C++이어야 할까? Java는 안될까?](#알고리즘-꼭-C++이어야-할까?-Java는-안될까?)
 
 # 출처
-- [Interview question for begineer](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Algorithm)(https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Algorithm))
+- [Interview question for begineer](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Algorithm)(https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Algorithm)
 - [how-to-rock-an-algorithms-interview](http://www.palantir.com/2011/09/how-to-rock-an-algorithms-interview/)(ERROR 404)
 - [알고리즘 공부, 어떻게 해야하나요?](https://baactree.tistory.com/52)
 - [알고리즘 공부에 있어서 언어 선택](https://www.acmicpc.net/board/view/24568)
@@ -30,6 +30,7 @@ last_modified_at: 2020-01-21TO11:38:00-12:30
 2. 그것을 통해 이야기하세요.
 
 3. 알고리즘을 생각하세요.
+
 **문제의 절반 이상을 해결하는 데 도움이 되는 알고리즘 기법**
 > - Sorting (plus searching / binary search)
 > - Divide and conquer
@@ -39,6 +40,7 @@ last_modified_at: 2020-01-21TO11:38:00-12:30
 > - Algorithms associated with a specific data structure
 
 4. 데이터 구조를 생각하세요.
+
 **상위 10 개의 데이터 구조가 실제 세계에서 사용되는 모든 데이터 구조의 99%를 차지한다**
 > - Array
 > - Stack/ Queue
@@ -48,7 +50,9 @@ last_modified_at: 2020-01-21TO11:38:00-12:30
 > - Graph
 
 5. 이전에 보았던 관련 문제와 해결 방법에 대해 생각해보세요.
+
 6. 문제를 작은 문제로 분해하여 수정하세요.
+
 7. 되돌아 오는 것을 두려워하지 마세요.
 > 가능성이 보이지 않는 방법에 많은 시간을 소비하지말고,
 > 기록해두고 다른 접근법을 시도해보기.
@@ -150,7 +154,8 @@ SWEA 난이도 1~2문제 많이 풀어보기
 **대회하려면 C++써라, 보조무기로 Python 써라**
 
 ### 구현력과 문제해결능력 동시에 늘리기 위한 가장 쉬운 방법
-**백준 랭작**
+
+**백준 랭작**<br>
 **필자의 경우 하루에 최소 5문제씩 계속 꾸준히 풀었다고 한다**
 알고리즘 유형 알고 푸는것과 모르고 푸는 것은 큰 차이가 있다.
 
