@@ -1,4 +1,8 @@
-﻿categories:
+﻿---
+title:  "자소서 작성법 정리"
+excerpt: "교내 취업센터 자소서 작성법 게시판을 읽고, 나름대로 읽기 쉽게 정리해 보았습니다."
+
+categories:
   - Job
 tags:
   - Job
