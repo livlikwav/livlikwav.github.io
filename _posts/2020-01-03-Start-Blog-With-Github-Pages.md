@@ -1,4 +1,4 @@
----
+﻿---
 title:  "Start Blog With Github Pages"
 excerpt: "GitHub Blog 서비스인 github.io 블로그 도전기 시작!"
 
@@ -6,7 +6,7 @@ categories:
   - Blog
 tags:
   - Blog
-last_modified_at: 2020-01-03TO12:00:00-05:00
+last_modified_at: 2020-01-03TO12:00:00+09:00
 ---
 
 안녕하세요!
