@@ -19,8 +19,6 @@ last_modified_at: 2020-03-03TO15:30:00+09:00
 # 출처
 - [에라토스테네스의 체](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)
 - [최적화된 에라토스테네스의 체](Eratosthenes' sieve)  
-  
-출처: [https://www.crocus.co.kr/805](https://www.crocus.co.kr/805) [Crocus]](https://www.crocus.co.kr/805)
 
 # 간단 정리
 ![](https://commons.wikimedia.org/wiki/File:Sieve_of_Eratosthenes_animation.gif)
@@ -34,7 +32,7 @@ last_modified_at: 2020-03-03TO15:30:00+09:00
 
 - 1 ~ n  구간의 n 을 input 받아온다
 - n이 0, 1 일 경우 바로 return 한다 (alternative flow)
-- boolean[] 을 n+1 크기로 만들고 다 true로 초기화 한다
+- **boolean[] 을 n+1 크기**로 만들고 다 true로 초기화 한다
 - 0, 1 을 false 처리 한다
 - 2 부터 차례로 걸러내기 시작한다
 - k^2 > n 을 만족하는 k 까지만 걸러 낸다.
