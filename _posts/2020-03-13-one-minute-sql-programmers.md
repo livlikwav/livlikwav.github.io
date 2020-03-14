@@ -11,12 +11,12 @@ last_modified_at: 2020-03-13TO20:00:00+09:00
 ---
 
 # 목차
-- [SELECT](# SELECT)
-- [SUM, MAX, MIN](# SUM,-MAX,-MIN)
-- [GROUP BY](# GROUP-BY)
-- [IS NULL](# IS-NULL)
-- [JOIN](# JOIN)
-- [String, Date](# String,-Date)
+- [SELECT](#select)
+- [SUM, MAX, MIN](#sum-max-min)
+- [GROUP BY](#group-by)
+- [IS NULL](#is-null)
+- [JOIN](#join)
+- [String, Date](#string-date)
 - [빠른 복습](# 빠른-복습)
 
 # 프로그래머스 SQL 문제
