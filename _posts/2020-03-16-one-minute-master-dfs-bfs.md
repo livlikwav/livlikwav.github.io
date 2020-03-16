@@ -3,10 +3,10 @@ title:  "1분복습 : DFS, BFS 문제를 맞이하는 나의 자세"
 excerpt: "최다 빈출 유형 중 하나인 DFS, BFS 문제를 마주했을 때, 촉박한 시간 내에서 실수없이 문제를 풀기 위해 가져야 할 마음을 정리해봅니다. 온전히 제 의견입니다."
 
 categories:
-  - PS
+  - 1분 복습
 tags:
+  - 1분 복습
   - PS
-  - Algorithm
 last_modified_at: 2020-03-16TO11:30:00+09:00
 ---
 # 나의 고민

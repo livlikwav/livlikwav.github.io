@@ -6,7 +6,7 @@ categories:
   - 1분복습
 tags:
   - 1분복습
-  - SW Maestro
+  - PS
 last_modified_at: 2020-03-13TO20:00:00+09:00
 ---
 

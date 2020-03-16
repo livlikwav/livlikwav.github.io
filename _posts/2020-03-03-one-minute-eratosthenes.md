@@ -1,12 +1,12 @@
 ﻿---
 title:  "1분 복습 : 에라토스테네스의 체"
-excerpt: "아 에라토스테네스의 체는 금방 알겠는걸"
+excerpt: "에라토스테네스의 체는 정말 금방인걸요?"
 
 categories:
   - 1분복습
 tags:
   - 1분복습
-  - SW Maestro
+  - PS
 last_modified_at: 2020-03-03TO15:30:00+09:00
 ---
 

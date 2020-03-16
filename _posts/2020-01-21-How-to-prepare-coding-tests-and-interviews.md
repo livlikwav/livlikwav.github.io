@@ -3,9 +3,9 @@ title:  "기술 면접, 코딩 테스트에 대한 접근법"
 excerpt: "어떻게 접근할 것인가, 어떻게 공부할 것인가"
 
 categories:
-  - Algorithm
+  - PS
 tags:
-  - Algorithm
+  - PS
 last_modified_at: 2020-01-21TO11:38:00+09:00
 ---
 
