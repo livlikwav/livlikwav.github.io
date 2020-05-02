@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Liv Lik Wav"
 description              : "major in computer science, Univ of Seoul.
-                            interested at programming, investment, powerlifting"
+                            Interested at programming, investment, weighttraining"
 url                      : "https://livlikwav.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "livlikwav/blog-comment" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -111,7 +111,7 @@ author:
   name             : "livlikwav"
   avatar           : "/assets/images/bio_photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "major in computer science, Univ of Seoul.
-                      interested at programming, investment, powerlifting"
+                      Interested at programming, investment, weighttraining"
   location         : "Seoul, Korea"
   email            : "gaonrudal@gmail.com"
   links:
@@ -121,9 +121,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
-    - #label: "Instagram"
-      # icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "Blog"
+      icon: "fas fa-fw fa-pen-square"
+      url: "https://livlikwav.tistory.com/"
 
 # Site Footer
 footer:
@@ -131,6 +131,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
+    - label: "Blog"
+      icon: "fas fa-fw fa-pen-square"
+      url: "https://livlikwav.tistory.com/"
 
 
 # Reading Files
