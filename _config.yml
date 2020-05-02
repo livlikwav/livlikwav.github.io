@@ -121,7 +121,7 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
-    - label: "Blog"
+    - label: "Tistory"
       icon: "fas fa-fw fa-pen-square"
       url: "https://livlikwav.tistory.com/"
 
@@ -131,7 +131,7 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
-    - label: "Blog"
+    - label: "Tistory"
       icon: "fas fa-fw fa-pen-square"
       url: "https://livlikwav.tistory.com/"
 
