@@ -1,23 +1,22 @@
 ﻿---
-title:  "1분 복습 : SQL 코딩테스트 대비 by 프로그래머스"
+title:  "SQL 코딩테스트 대비 by 프로그래머스"
 excerpt: "프로그래머스 SQL 고득점 kit 모든 문제 답안과 오답노트를 정리합니다. 유형별 문제를 금방 복습하는 것이 목표인 글입니다."
 
 categories:
-  - 1분복습
+  - 공부
 tags:
-  - 1분복습
-  - PS
+  - 알고리즘
 last_modified_at: 2020-03-13TO20:00:00+09:00
 ---
 
 # 목차
-- [SELECT](#select)
-- [SUM, MAX, MIN](#sum-max-min)
-- [GROUP BY](#group-by)
-- [IS NULL](#is-null)
-- [JOIN](#join)
-- [String, Date](#string-date)
-- [빠른 복습](# 빠른-복습)
+- [SELECT](##select)
+- [SUM, MAX, MIN](##sum-max-min)
+- [GROUP BY](##group-by)
+- [IS NULL](##is-null)
+- [JOIN](##join)
+- [String, Date](##string-date)
+- [빠른 복습](## 빠른-복습)
 
 # 프로그래머스 SQL 문제
 ![image](https://user-images.githubusercontent.com/44190293/76614435-693d1580-6563-11ea-9350-05fcf55e228f.png)
@@ -26,7 +25,7 @@ last_modified_at: 2020-03-13TO20:00:00+09:00
 - 다음에는 이 글만 보고 복습할 수 있도록 정리하였습니다.
 - 기존에 한번 공부하신 분들이라면 하루안에 가능합니다.
 
-# SELECT
+## SELECT
 1. `SELECT * FROM ANIMAL_INS ORDER BY ANIMAL_ID` <br>
    **ORDER BY 문제**<br>
    ORDER BY column_name (ASC, DESC)
@@ -61,7 +60,7 @@ last_modified_at: 2020-03-13TO20:00:00+09:00
 	**오답:**`SELECT COUNT(NAME) FROM ANIMAL_INS GROUP BY NAME`<br>
 	이러면 이름별 갯수 나오게 됨.
 
-# GROUP BY
+## GROUP BY
 1. `SELECT ANIMAL_TYPE, COUNT(ANIMAL_ID) FROM ANIMAL_INS GROUP BY ANIMAL_TYPE`<br>
 	**GROUP BY 알기**
 2. `SELECT NAME, COUNT(NAME) FROM ANIMAL_INS GROUP BY NAME HAVING COUNT(NAME) >= 2`<br>
@@ -82,7 +81,7 @@ last_modified_at: 2020-03-13TO20:00:00+09:00
 	- UNION으로 0~23 모든 시간을 가진 TABLE을 생성하고, 여기에 LEFT JOIN과 IFNULL을 사용해 문제 해결
 	- [https://mentha2.tistory.com/97](https://mentha2.tistory.com/97) [행궁동 데이터과학자]
 
-# IS NULL
+## IS NULL
 1. `SELECT ANIMAL_ID FROM ANIMAL_INS WHERE NAME IS NULL`<br>
 	**IS NULL을 아는지. WHERE 절에 사용하는 연산자**
 2. `SELECT ANIMAL_ID FROM ANIMAL_INS WHERE NAME IS NOT NULL`<br>
@@ -90,9 +89,9 @@ last_modified_at: 2020-03-13TO20:00:00+09:00
 3. **틀렸음** `SELECT ANIMAL_TYPE, IFNULL(NAME, 'No name') as NAME, SEX_UPON_INTAKE FROM ANIMAL_INS`<br>
 	**IFNULL(컬럼, 대체값) 을 아는지**
 
-# JOIN
+## JOIN
 
-## JOIN 은 오랜만이라 복습을 좀 했다
+### JOIN 은 오랜만이라 복습을 좀 했습니다.
 [https://futurists.tistory.com/17](https://futurists.tistory.com/17)
 - INNER JOIN
 - LEFT JOIN
@@ -115,7 +114,7 @@ SELECT * FROM 테이블1 JOIN 테이블2 ON 조인조건 <br>
 4. `SELECT A.ANIMAL_ID, A.ANIMAL_TYPE, A.NAME FROM ANIMAL_INS AS A JOIN ANIMAL_OUTS AS B ON A.ANIMAL_ID = B.ANIMAL_ID WHERE A.SEX_UPON_INTAKE != B.SEX_UPON_OUTCOME ORDER BY A.ANIMAL_ID`<br>
 	**문제 잘읽고, != 사용하여 다른 레코드 찾기**
 
-# String, Date
+## String, Date
 1. `SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE FROM ANIMAL_INS WHERE NAME IN ('Lucy', 'Ella', 'Pickle', 'Rogan', 'Sabrina', 'Mitty')`<br>
 	**where 절에서 <컬럼 IN (후보1, 후보2, 후보3...) 아는지**<br>
 	**문자열 ' ' 빼먹지말기 **
@@ -130,13 +129,13 @@ SELECT * FROM 테이블1 JOIN 테이블2 ON 조인조건 <br>
 5. `SELECT ANIMAL_ID, NAME, DATE_FORMAT(DATETIME, '%Y-%m-%d') AS '날짜' FROM ANIMAL_INS ORDER BY ANIMAL_ID`<br>
 	**DATE_FORMAT() 함수알기!, 포맷지정자 알기**
 
-## DATE_FORMAT() 관련 참고
+### DATE_FORMAT() 관련 참고
 -  [https://lightblog.tistory.com/155](https://lightblog.tistory.com/155)
 - %y면 2개, %Y면 4개, %M이면 글자, %m이면 숫자, %D, %d도 마찬가지
 - 날짜 프린트하기도 편하겠다!
 
 
-# 빠른 복습 
+## 빠른 복습 
 SELECT문
 - ORDER BY
 - ORDER BY ASC, DESC

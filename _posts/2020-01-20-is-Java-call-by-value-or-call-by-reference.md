@@ -3,11 +3,13 @@ title:  "Java는 Call by Value일까, Call by Reference일까?"
 excerpt: "Java의 인자전달방식은 무엇일까?"
 
 categories:
-  - Java
+  - 공부
 tags:
-  - Java
+  - 자바
 last_modified_at: 2020-01-20TO20:00:00+09:00
 ---
+
+3가지의 글을 읽고, 나름대로 이해하려 노력하였습니다. 
 
 # 목차
 - [1번째 글](#1번째-글)
@@ -88,7 +90,6 @@ public static void foo(Dog d) {
 In the example above  `aDog.getName()`  will still return  `"Max"`. The value  `aDog`  within  `main`  is not changed in the function  `foo`  with the  `Dog`  `"Fifi"`  as the object reference is passed by value. If it were passed by reference, then the  `aDog.getName()`  in  `main`  would return  `"Fifi"`  after the call to  `foo`.
 > 위의 예제에서  `aDog.getName()`  는 여전히 `"Max"`를 리턴한다. `main`에서의 `aDog`는  함수 `foo`에서 `"Fifi"`로 교체되지 않는다, 객체의 레퍼런스가 값 자체로 복사되기 때문에.
 
-**아직까지는 이해가 안된다. 레퍼런스 자체를 값 복사로 넘겨줬으면 레퍼런스를 넘겨준거 아닌가!!? 더보자**
 
 Likewise:
 
@@ -118,7 +119,7 @@ In the above example,  `Fifi`  is the dog's name after call to  `foo(aDog)`  bec
 * `d = new Dog("Fifi");`
 * `d.setName("Fifi");`
 
-**내 이해:**
+**제 나름의 이해입니다.**
 말그대로 객체의 레퍼런스 자체를 pass-by-value로 보내주기 때문에, 
 `foo()` 내에서 새로운 레퍼런스 변수 `Dog d`가 있는거고, 그 d는 `main`에 레퍼런스 변수 `Dog aDog`가 가리키는 객체를 가리킨다.
 
@@ -127,7 +128,7 @@ In the above example,  `Fifi`  is the dog's name after call to  `foo(aDog)`  bec
 
 `d.setName("Fifi");`를 수행하면 `Dog d`가 가리키는, `Dog aDog`도 가리키고 있는 객체가 메소드를 수행하므로, 다시 `main`절로 나가서 `Dog aDog`가 가리키고 있는 객체의 `getName()`을 수행하면 `"Fifi"`로 바뀌어 있는 것이다.
 
-**밑의 답변들은 읽고 넘겼다. 그림 예제도 있으니 한번씩 훑어 보면 이해에 도움이 될 것이다.**
+**밑의 답변들은 읽고 넘겼습니다. 그림 예제도 있으니 한번씩 훑어 보면 이해에 도움이 될 것입니다.**
 
 # 3번째 글
 
@@ -188,10 +189,3 @@ Java에서 말하는 reference는 참조자료형 변수인 레퍼런스 변수�
 1. 함수 호출의 argument의 순서를 언제 결정하고
 2. 함수에 어떤 종류의 값을 통과시킬지 결정하는 것이다.
 [https://ko.wikipedia.org/wiki/평가전략](https://ko.wikipedia.org/wiki/%ED%8F%89%EA%B0%80_%EC%A0%84%EB%9E%B5_(%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D))
-
-### 추신
-**제임스 고슬링**
-자바를 최초 개발하여 '자바의 아버지'라고 불린다.
-가장 영향력 있는 프로그래머들 가운데 한 사람이다.
-자바(Java)라는 명칭은 유명한 커피 재배지인 인도네시아 섬 이름인 자바섬에서 따왔다고 한다.
-자바 커피를 하루에도 10여잔 씩 마시는 자바 예찬론자 이기도 하다.

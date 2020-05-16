@@ -1,2 +1,2 @@
 # livlikwav.github.io
-record my work, life, love
+live like wave

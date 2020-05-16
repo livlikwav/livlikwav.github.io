@@ -1,5 +1,5 @@
 ﻿---
-title:  "1분복습: Node js 사용기"
+title:  "Node js 사용기"
 excerpt: "Node js가 무엇이고, Node js를 선택하게 된 이유를 정리합니다."
 
 categories:

@@ -1,12 +1,11 @@
 ﻿---
 title:  "2020-01 동문 멘토링 참석 후기"
-excerpt: "동문 개발자 선배님을 뵙고, 부족한 질문들을 많이 드렸습니다."
+excerpt: "부족한 질문들을 많이 드렸습니다."
 
 categories:
-  - Etc
+  - 기타
 tags:
-  - Job
-  - Programmer
+  - 취업준비
 last_modified_at: 2020-02-03TO18:00:00+09:00
 ---
 # 목차

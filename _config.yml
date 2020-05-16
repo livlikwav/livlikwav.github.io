@@ -110,8 +110,7 @@ analytics:
 author:
   name             : "livlikwav"
   avatar           : "/assets/images/bio_photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "major in computer science, Univ of Seoul.
-                      Interested at programming, investment, weighttraining"
+  bio              : "Univ of Seoul, Computer Science"
   location         : "Seoul, Korea"
   email            : "gaonrudal@gmail.com"
   links:

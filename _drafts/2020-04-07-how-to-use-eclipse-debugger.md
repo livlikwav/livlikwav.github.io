@@ -1,11 +1,11 @@
 ﻿---
-title:  "이클립스 디버거 사용법"
-excerpt: "디버거는 보통 IDE마다 제공하는데, 그 중 제가 사용하는 Eclipse의 디버거 사용법을 읽고 정리해보았습니다."
+title:  "이클립스 디버거 사용하기"
+excerpt: "그래도 printf가 더 편한거 같기도 하고.."
 
 categories:
-  - Java
+  - 툴
 tags:
-  - Java
+  - 자바
 last_modified_at: 2020-04-07TO22:30:00+09:00
 ---
 

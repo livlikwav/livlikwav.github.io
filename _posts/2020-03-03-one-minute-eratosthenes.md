@@ -1,26 +1,25 @@
 ﻿---
-title:  "1분 복습 : 에라토스테네스의 체"
+title:  "에라토스테네스의 체가 모야"
 excerpt: "에라토스테네스의 체는 정말 금방인걸요?"
 
 categories:
-  - 1분복습
+  - 공부
 tags:
-  - 1분복습
-  - PS
+  - 알고리즘
 last_modified_at: 2020-03-03TO15:30:00+09:00
 ---
 
-내가 나중에 복습하고 싶어서 정리하는 시리즈.
+나중에 빨리 복습하고 싶어서 정리합니다.
 
 # 목차
-- [간단 정리](#간단-정리)
-- [구현](#구현)
+- [간단 정리](## 간단-정리)
+- [구현](## 구현)
 
 # 출처
 - [에라토스테네스의 체](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)
 - [최적화된 에라토스테네스의 체](Eratosthenes' sieve)  
 
-# 간단 정리
+## 간단 정리
 ![](https://commons.wikimedia.org/wiki/File:Sieve_of_Eratosthenes_animation.gif)
 
 정말 간단 <br>
@@ -28,7 +27,7 @@ last_modified_at: 2020-03-03TO15:30:00+09:00
 - 1~n 까지의 구간에 대해서 소수를 구하는 것이다
 - 1, 2, 3 ... k 까지 차례로 나눠나갈 때 k^2 > n 을 만족하는 k 까지만 구해보면 된다
 
-# 구현 
+## 구현 
 
 - 1 ~ n  구간의 n 을 input 받아온다
 - n이 0, 1 일 경우 바로 return 한다 (alternative flow)
