@@ -24,7 +24,10 @@ layout: single
     -  Jupytor Notebook, Colab
     -  Pandas, Numpy, nltk.corpus, matplotlib.pyplot
     -  Tensorflow 2.X, Keras
+    -  Selenium, bs4 (Web Crawling)
 -  Node.js
 -  Git
     -  Bash, GitKraken
 -  StarUML
+-  API
+    - Google Custom Search 
