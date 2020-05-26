@@ -15,11 +15,13 @@ layout: single
 
 ### 가능
 -  Java
-    - + GUI
+    -  GUI
 -  HTML, CSS, JS(JQuery)
 
 ### 맛만 봄
 -  Android Studio(Java)
+-  Web UI Library
+    -  React
 -  Python
     -  Jupytor Notebook, Colab
     -  Pandas, Numpy, nltk.corpus, matplotlib.pyplot
