@@ -14,12 +14,17 @@ categories:
 tags:
 -   로드맵
 -   일기
+-   macOS
 -   SW마에스트로
 -   알고리즘
 -   인프라
+-   Flutter
+-   React-native
 -   데브옵스
 -   데이터베이스
 -   자바
+-   백엔드
+-   인공지능
 -   기술면접
 -   취업준비
 -   선형대수
