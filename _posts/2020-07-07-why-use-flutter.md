@@ -13,17 +13,18 @@ last_modified_at: 2020-07-07TO22:30:00+09:00
 - [크로스플랫폼 대표주자 React-native와 Flutter](#크로스플랫폼-대표주자-react-native와-flutter)
 - [Web-RTC 라이브러리를 사용해야 한다면](#web-rtc-라이브러리를-사용해야-한다면)
 - [나의 선택은 Flutter](#나의-선택은-flutter)
+  - [참고글](#참고글)
 
-Flutter를 자꾸 추천하는 눈치셨지만,
+Flutter로 하라는 눈치셨지만,
 이미 React-native 강의를 결제했는 걸요...?
-(옛날부터 쓰겠다고 말씀 드렸지만...)
-그래서 고민 중이다.
+(이번에 Vue-native도 나왔다고 하셨다)
 
-(이번에 Vue-native도 나왔다고 한다)
+그래서 고민해봤다.
 
 ## 크로스플랫폼 대표주자 React-native와 Flutter
 
 ![react-native_logo](https://upload.wikimedia.org/wikipedia/commons/d/d3/React_Native.png)
+
 React-native에 대한 대부분의 의견
 
 - 가장 퍼포먼스가 안좋고
@@ -32,7 +33,8 @@ React-native에 대한 대부분의 의견
 - 현재 약간 Deprecated의 길을 걷고 있다
   - Facebook이 더이상 관리를 잘 안해서, 패키지가 난무한다고 하셨다.
 
-![flutter_logo](https://flutter-ko.dev/assets/flutter-lockup-4cb0ee072ab312e59784d9fbf4fb7ad42688a7fdaea1270ccf6bbf4f34b7e03f.svg)
+![flutter_logo](https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png)
+
 Flutter에 대한 의견
 
 - 그에 비해 구글이 관리를 잘 한다. 전담 팀이 있다
@@ -77,3 +79,6 @@ flutter는 사용해보지 않아서 어느정도 레벨로 지원이 될지는 
   - (혹자는 구글에서 그만큼 프로젝트를 잘 없애버린다고 하기도 한다, 참고)
 - 개발 환경이 더 편하다고 한다.
 
+### 참고글
+
+- [Flutter, 왜 선택하지 못했나](https://engineering.linecorp.com/ko/blog/flutter-pros-and-cons/)
