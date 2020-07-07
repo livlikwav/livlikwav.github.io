@@ -7,6 +7,7 @@ categories:
 -   공부
 -   웹
 -   앱
+-   Flutter
 -   프로젝트
 -   툴
 -   일기
