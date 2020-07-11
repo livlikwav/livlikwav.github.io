@@ -1,6 +1,6 @@
 ---
 title:  "Dictionary For Me #1"
-excerpt: "용어를 아는게 중요하더라"
+excerpt: "나를 위한 단어장"
 
 
 categories:
@@ -10,11 +10,25 @@ tags:
 last_modified_at: 2020-07-15TO22:30:00+09:00
 ---
 
-## 용어 정리
+## 나만의 단어장
 
-용어를 알아야 보다 명확하게 이해한다.
+- ATAM
+- CBAM
+- 프로비저닝
+- nginx
+- 패키징
+- 배포
+- 리눅스 파이프라인
+- jenkins
+- CentOS
+- Ubuntu
+- Unix
+- Linux
+- Daemon
+- SSH
+- SQLite
 
-### 소프트웨어 아키텍쳐 평가 모델
+## 소프트웨어 아키텍쳐 평가 모델
 
 [참고링크](https://devdic.tistory.com/21)
 
@@ -32,8 +46,6 @@ last_modified_at: 2020-07-15TO22:30:00+09:00
 - 시점
   - 이른 평가
   - 늦은 평가
-
-**그 중에서 대화 중 나왔던, ATAM과 CBAM 만을 먼저 정리한다.**
 
 ### ATAM(Architecture Tradeoff Analysis Method)
 

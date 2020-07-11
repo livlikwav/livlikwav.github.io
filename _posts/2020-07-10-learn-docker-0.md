@@ -4,14 +4,14 @@ excerpt: "새로운 기술의 도입이, 어떤 어려움을 해결하기 위해
 
 
 categories:
--   공부
+-   Docker
 tags:
 -   Docker
-last_modified_at: 2020-07-09TO22:30:00+09:00
+last_modified_at: 2020-07-10TO22:30:00+09:00
 ---
 - [너무 핫한 도커, 쿠버네티스](#너무-핫한-도커-쿠버네티스)
 - [도커 시작하기](#도커-시작하기)
-- [Docker getting-started](#docker-getting-started)
+- [Getting-started](#getting-started)
 - [같이 공부한 용어들](#같이-공부한-용어들)
   - [SQLite 란](#sqlite-란)
 
@@ -54,7 +54,9 @@ last_modified_at: 2020-07-09TO22:30:00+09:00
 
 이걸 읽으면서, 도커 공식 홈페이지의 getting-started를 따라했습니다.
 
-## Docker getting-started
+## Getting-started
+
+도커에 대해서 완벽히 이해하지 못했더라도 따라할 수 있게 예제가 잘 만들어져 있습니다.
 
 ## 같이 공부한 용어들
 
@@ -71,9 +73,7 @@ last_modified_at: 2020-07-09TO22:30:00+09:00
 [위키피디아 - SQLite](https://ko.wikipedia.org/wiki/SQLite)
 
 > SQLite는 MySQL나 PostgreSQL와 같은 데이터베이스 관리 시스템이지만, **서버가 아니라 응용 프로그램에 넣어 사용하는 비교적 가벼운 데이터베이스**이다. 영어권에서는 '에스큐엘라이트(ˌɛskjuːɛlˈlaɪt)'또는 '시퀄라이트(ˈsiːkwəl.laɪt)'라고 읽는다.
-
 > 일반적인 RDBMS에 비해 대규모 작업에는 적합하지 않지만, **중소 규모라면 속도에 손색이 없다.** 또 API는 단순히 라이브러리를 호출하는 것만 있으며, **데이터를 저장하는 데 하나의 파일만을 사용하는 것이 특징**이다. 버전 3.3.8에서는 풀텍스트 검색 기능을 가진 FTS1 모듈이 지원된다. 컬럼을 삭제하거나 변경하는 것 등이 제한된다.
-
 > **구글 안드로이드 운영 체제에 기본 탑재된 데이터베이스**이기도 하다.
 
 참고링크
