@@ -4,7 +4,7 @@ excerpt: "Machine Reading Comprehension; 기계독해에 대해서 정리합니�
 
 
 categories:
--   공부
+-   NLP
 tags:
 -   NLP
 last_modified_at: 2020-05-26TO16:30:00+09:00

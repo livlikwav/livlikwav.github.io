@@ -3,20 +3,26 @@ title:  "SQL 코딩테스트 대비 by 프로그래머스"
 excerpt: "프로그래머스 SQL 고득점 kit 모든 문제 답안과 오답노트를 정리합니다. 유형별 문제를 금방 복습하는 것이 목표인 글입니다."
 
 categories:
-  - 공부
+  - SQL
 tags:
   - 알고리즘
+  - 코딩테스트
 last_modified_at: 2020-03-13TO20:00:00+09:00
 ---
 
 # 목차
-- [SELECT](#select)
+- [목차](#목차)
+- [프로그래머스 SQL 문제](#프로그래머스-sql-문제)
+	- [SELECT](#select)
 - [SUM, MAX, MIN](#sum-max-min)
-- [GROUP BY](#group-by)
-- [IS NULL](#is-null)
-- [JOIN](#join)
-- [String, Date](#string-date)
-- [빠른 복습](#빠른-복습)
+	- [GROUP BY](#group-by)
+		- [4번부터 어렵다!](#4번부터-어렵다)
+	- [IS NULL](#is-null)
+	- [JOIN](#join)
+		- [JOIN 은 오랜만이라 복습을 좀 했습니다.](#join-은-오랜만이라-복습을-좀-했습니다)
+	- [String, Date](#string-date)
+		- [DATE_FORMAT() 관련 참고](#date_format-관련-참고)
+	- [빠른 복습](#빠른-복습)
 
 # 프로그래머스 SQL 문제
 ![image](https://user-images.githubusercontent.com/44190293/76614435-693d1580-6563-11ea-9350-05fcf55e228f.png)

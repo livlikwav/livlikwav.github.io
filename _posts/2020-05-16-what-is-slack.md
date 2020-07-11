@@ -4,9 +4,9 @@ excerpt: "남들 다 쓴다고 하면 꼭 한번은 써봐야 대화가 되더�
 
 
 categories:
-  - 툴
+  - Tools
 tags:
-  - 데브옵스
+  - 슬랙
 last_modified_at: 2020-05-16TO00:30:00+09:00
 ---
 

@@ -1,10 +1,10 @@
 ---
 title:  "터린이 맥린이의 맥북 개발환경 세팅기"
-excerpt: "이제 카페에서 터미널 키고 콤퓨타 잘하는 척할 수 있는걸까요?"
+excerpt: "이제 카페에서 터미널 키고 콤퓨타 잘하는 척할 수 있는걸까?"
 
 
 categories:
--   툴
+-   macOS
 tags:
 -   macOS
 last_modified_at: 2020-07-03TO22:30:00+09:00

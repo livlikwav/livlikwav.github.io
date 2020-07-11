@@ -4,9 +4,10 @@ excerpt: "새로운 것에 도전하는 과정 자체를 개선하자 = 업무 �
 
 
 categories:
--   공부
+-   프로젝트 기획
 tags:
 -   디자인
+-   Adobe Xd
 last_modified_at: 2020-07-02TO15:30:00+09:00
 ---
 
