@@ -9,6 +9,7 @@ categories:
 -   Algorithm
 -   공부
 -   프로젝트 기획
+-   프로젝트 관리
 -   일기
 -   macOS
 -   기타
