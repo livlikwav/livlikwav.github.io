@@ -27,6 +27,7 @@ last_modified_at: 2020-07-15TO22:30:00+09:00
 - Daemon
 - SSH
 - SQLite
+- CI와 CD
 
 ## 소프트웨어 아키텍쳐 평가 모델
 

@@ -11,6 +11,9 @@ categories:
 -   프로젝트 기획
 -   프로젝트 관리
 -   일기
+-   Docker
+-   Tools
+-   CI/CD 
 -   macOS
 -   기타
 tags:
