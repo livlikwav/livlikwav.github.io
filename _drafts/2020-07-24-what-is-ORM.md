@@ -30,45 +30,236 @@ SQLAlchemy, Marshmellow ... 이런 처음 보는 것들이 나와서 검색해�
 - [https://youtu.be/B6iOqljc7U8](https://youtu.be/B6iOqljc7U8)
 - [https://www.youtube.com/watch?v=6mHpfGjpE_M](https://www.youtube.com/watch?v=6mHpfGjpE_M)
 
-## ORM = Object Relation Mapping
+## 결국 공식 문서가 최고다
 
-보통 DB 연동시
-코드를 돌리는게 있고 
-데이터를 쿼리를 하거나 할때 
-SQL statement로 해서 호출을 한다.
+맨 처음에는 너무 오래걸릴까 겁나하고 피하게 되는데, 결국은 공식 문서가 최고인 것 같다.
+[https://docs.sqlalchemy.org/en/13/intro.html](https://docs.sqlalchemy.org/en/13/intro.html)
 
-DB는 굉장히 역사가 오래된 시스템이다.
-굉장히 많은 양의 데이터를 굉장히 효율적으로 검색을 할 수 있게 해주는 기술이다.
+### Overview
 
-언제나 DB에 저장되는 데이터는 1차원적이다.
+SQLAlchemy has two major components
 
-광장히 이질적인 패러다임 2개를 같이 쓰게 된다.
+- SQLAlchemy ORM
+- SQLAlchemy Core
+  - Schema / Types
+  - SQL Expression Language
+  - Engine
+    - Connection Pooling
+    - Dialect
 
-- OOP
-- ER
+New users should begin with Object Relational Tutorial
 
-DB쪽의 입장이 아니라 Programmer 입장에서 모든 걸 생각해보자.
-Object 안에 composition으로 다른 객체 참조가 되게 되어있다. 이게 외래키랑 비슷하다.
+### Object Relational Tutorial
 
-또 다른 레이어를 만들자.
-프로그래머는 객체로 저장하면
-뒤에 SQL, NoSQL(JSON), File 다 저장해준다.
-쿼리를 알 필요도 없다.
+### Domain model, DDD
 
-성능적인 문제가 있긴 하다
-stored procedure와 같은 혜택을 받기는 어려워서 적용은 늦었따.
+Domain = field that has problem
+Domain model describes ...
 
-DB를 만들때 SQL query를 써서 직접 생성하지 않는다.
-ORM을 쓴다.
+- various entities
+- their attributes
+- roles
+- relationships
+- constraints
 
-만약에 기존에 존재하는 데이터베이스가 있을 경우에는,
-거기에 맞게 코드를 작성하는게 낫다.
-DB first method
+### Connecting
 
-이제 나아가는 방법
-Code first method
+- create_engine()
 
-똑같은 개념으로 JSON도 말한다
-JSON도 Object에서 생성을 하는게 맞다.
+echo flag
+> shortcut to setting up SQLalchemy logging
+> enabled, can see all the generated SQL produced
 
-결과적으론 Object를 기반으로 프로그래밍하는 날이 왔다.
+return value of create_engine()
+> instance of Engine
+> core interface to the database
+> adapted through a dialect, DBAPI
+
+Engine.execute() or Engine.connect()
+> engine establishes a real DBAPI connection to the database
+
+When using the ORM, we typically don't use the Engine directly one created
+
+### Declare a Mapping
+
+configurational process
+
+1. describing the database tables
+2. defining our own classes
+
+In modern SQLAlchemy, these two tasks are usually performed together
+using a system 'Declarative'
+
+Declarative
+> allows us to create classes that include directives to describe the actual database table
+
+mapped class inherit declarative base class
+`Base = declarative_base()`
+
+in mapped class, we define details about the table
+> mapped class = table
+> table name, names, datatypes of columns
+
+class User(Base):
+    __tablename__ = 'users'
+
+    id = Column(Integer, primary_key = True)
+    name = Column(String)
+    fullname = Column(String)
+    nickname = Column(String)
+
+__repr__() method
+this is optional
+we only implement it in this tutorial
+this method be used to nicely format User object
+
+declarative replaces
+all the Column objects >> descriptors(__get__, __add__, __delete)
+this process called instrumentation
+
+the instrumented mapped class persist and load the values of cols from the db
+
+the class also remains mostly a normal python class
+> we can define any number of ordinary attributes and methods
+
+### Create a Schema
+
+class via the Declarative system
+this is about our table, known as table metadata
+
+Table object
+represent table metadata for a specific table
+
+we can see this Table object
+by inspecting the __table__ attribute
+
+`User.__table__`
+
+diffirent way (!= Declarative system)
+mapped to any Table using the mapper() func directly
+
+but Declarative system is highly recommended
+
+VARCHAR columns
+> only allowd on SQLite and PostgreSQL
+> use String(50)
+
+Sequence()
+> 이거는 Oracle이나 Firebird에서 쓰는 다른 새로운 primary key idenfiers를 위한 옵션인듯
+
+### Create an Instance of the Mapped Class
+
+with mappings complete
+now create and inspect a User object
+
+지금까지 클래스를 만든거자나.
+이제 객체를 만들어야해. 클래스로 인스턴스 빵 구워내야해.
+
+>>> ed_user = User(name = 'ed', fullname='Ed Jones', nickname = 'edsnickname')
+>>> ed_user.name
+'ed'
+>>> ed_user.nickname
+'edsnickname'
+
+Declarative system - __init__() method
+free to define any explicit __init__()
+there is default __init__()
+automatically accepts keyword names that match the columns we've mapped
+
+id attribute
+SQLAlchemy's instrumentation normally produce this default value 'None'
+produce when first accessed
+
+instrumentation system is tracking attributes of mapped class
+emit INSERT statement when assign something on attributes
+
+### Creating a Session
+
+now ready to start talking to the DB
+The ORM's "handle" to the db is the Session
+
+at the same level as our create_engine() statement,
+we define a Session class
+which will serve as a factory for new Session objects
+
+from sqlalchemy.orm import sessionmaker
+Session = sessionmake(bind = engine)
+
+This custom-made Session class will create new Session objects
+which are bound to our database.
+
+Whenever you need to have a conversation with the db,
+you instantiate a Session
+`session = Session()`
+but it hasn't opened any connections yet
+
+### Adding and Updating Objects
+
+ORM object = record of table
+
+to persist our User object
+we Session.add() it to our Session
+
+why ORM is persistence technology?
+because we want to persist our object
+
+`ed_user = User(name=~)`
+`session.add(ed_user)`
+
+pending > flush
+
+we create a new Query object which loads instances of User
+`our_user = session.query(User).filter_by(name='id').first()`
+> get first result in the full list of rows
+
+Session identify that the row returned is the same row as one already represented within its internal map of objects
+`ed user is our user`
+`True`
+
+identity map
+> a mapping between python objects - database identities
+> a collection that is associated with an ORM session object
+> maintain a single instance of every db object keyed to its identity
+
+ensure that all operations upon a particular row
+within a Session operate upon the same set of data
+
+add more User objects
+using add_all()
+`session.add_all([User(), User(), User()])`
+
+session is paying attention
+it knows what is modified
+`session.dirty`
+
+and knows what is pending
+`session.new`
+
+we'd like to issue all remaining changes to the db
+and commit the transaction
+we use Session.commit()
+`session.commit()`
+flushes the remaining changes to the db
+and commits the transaction
+
+connection resources referenced by the session
+are now returned to the connection pool
+
+after commit session,
+mapped object now has a id value
+`ed_user.id`
+`1`
+
+### Rolling Back
+we can roll back changes made too
+
+session에 있는 ed.user를 update 하고
+새로운 object를 만들어서 session.add() 하고나서 
+rollback = 가장 최근의 session commit 상태로 돌아갈 수 있음
+
+## 블로그 참고
+
+데이터베이스 > 테이블 > 레코드 순서인데
+Base로 만든 Class가 테이블
+Class로 만든 instance가 레코드라면
+데이터베이스는 어떻게 만들지?
