@@ -35,6 +35,7 @@ SQLAlchemy, Marshmellow ... 이런 처음 보는 것들이 나와서 검색해�
 맨 처음에는 너무 오래걸릴까 겁나하고 피하게 되는데, 결국은 공식 문서가 최고인 것 같다.
 [https://docs.sqlalchemy.org/en/13/intro.html](https://docs.sqlalchemy.org/en/13/intro.html)
 
+
 ### Overview
 
 SQLAlchemy has two major components
