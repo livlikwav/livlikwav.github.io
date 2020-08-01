@@ -35,3 +35,24 @@ SQLAlchemy의 Flask에 특화된 버전인 Flask-sqlalchemy를 사용했다. 처
     # configure your app...
     return app
 ```
+
+
+- Api Versioning
+- Api Resource
+
+GraphQL
+리소스를 정의하고 
+리소스를 결합해서 쿼리할 수 있는 형태
+
+이걸 제일 잘 만들어 놓은 회사가 페이스북이다.
+
+GraphQL이 트렌디한 기술인가보다
+
+reference 하기 가장 좋은 API는 페이스북
+만약에 금융권에 있다하면 페이팔 API임
+> 페이팔 API는 정말 아름답다고 하심
+
+가장 배우기 쉬운것은 좋은 API를 베끼자
+
+- 페이스북
+- 페이팔
