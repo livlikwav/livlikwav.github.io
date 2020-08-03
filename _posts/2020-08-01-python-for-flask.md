@@ -12,6 +12,7 @@ last_modified_at: 2020-08-01TO20:30:00+09:00
 ---
 - [Python Module](#python-module)
 - [Python Package](#python-package)
+  - [from ~ import ~ 주의할 점](#from--import--주의할-점)
   - [init 파일의 용도](#init-파일의-용도)
 - [Python staticmethod](#python-staticmethod)
   - [@staticmethod](#staticmethod)
@@ -75,6 +76,13 @@ PyCharm같은 파이썬 에디터를 사용하면 패키지 만들면 \_\_init\_
 
 패키지 내의 init 파일을 사용하는 방법도 있다.
 init 파일의 사용 방법이 좀 특이하다
+
+### from ~ import ~ 주의할 점
+
+[참고링크 : 파이썬 import한 모듈과 패키지를 찾는 과정](https://velog.io/@anrun/python-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%B4-import%ED%95%9C-%EB%AA%A8%EB%93%88%EA%B3%BC-%ED%8C%A8%ED%82%A4%EC%A7%80%EB%A5%BC-%EC%B0%BE%EB%8A%94-%EA%B3%BC%EC%A0%95)
+
+`from .model import user`와
+`from model import user`는 엄연히 다른 것이다!
 
 ### init 파일의 용도
 
