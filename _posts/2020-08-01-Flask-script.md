@@ -1,5 +1,5 @@
 ---
-title:  "Flask-script : manage.py는 뭘까?"
+title:  "Flask-script로 CLI에서 편하게 서버 다루기"
 excerpt: "커맨드를 관리하기 위한 라이브러리"
 
 
