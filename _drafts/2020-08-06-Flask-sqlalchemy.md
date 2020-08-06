@@ -38,7 +38,7 @@ SQL문을 자동으로 생성해준다.
 SQLAlchemy는 2가지의 중요 구성 요소가 존재한다.
 
 - SQLAlchemy ORM
-- SQLAlchemy Core
+- SQLAlchemy **Core**
   - Schema / Types
   - SQL Expression Language
   - Engine

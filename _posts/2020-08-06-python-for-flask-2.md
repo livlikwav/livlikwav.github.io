@@ -40,7 +40,7 @@ Github에서 Python 코드들을 보다보면 많이 볼 수 있는 골뱅이 @.
 
 ### 데코레이터 선언 방법
 
-1) 함수로 선언한다
+1>함수로 선언한다
 
 ```python
 def foo(func):
@@ -62,13 +62,13 @@ bar(1, 2)
 # wow
 ```
 
-2) 클래스로 선언한다
+2>클래스로 선언한다
 
 ```python
 class foo:
     def __init__(self, func):
         self.func = func
-    
+
     def __call__(self, *args, **kwargs):
         print("wow")
         result = self.func(*args, **kwargs)
@@ -91,7 +91,7 @@ bar(1, 2)
 데코레이터에도 파라미터를 전달하고 싶을 수 있다.
 이럴땐 wrapper 함수를 다시 감싸주면 된다.
 
-1) 함수식 선언
+1>함수식 선언
 
 ```python
 def foo_with_param(param):
@@ -118,7 +118,7 @@ bar(1, 2)
 # hey, param
 ```
 
-2) 클래스식 선언
+2>클래스식 선언
 
 ```python
 class foo_with_param
@@ -153,6 +153,7 @@ bar(1, 2)
 >대충 소스 보니 func의 __doc__같은 meta 정보를 wrapper에 복사해 넣는거 같은데 확실한건 아님.
 
 예시
+
 ```python
 def foo(func):
     @wraps(func)
@@ -207,7 +208,6 @@ bar.__doc__
 # :param: Integer
 # :return: Integer|String (T|F)
 ```
-
 
 ## 파이썬 접근 제어자 : Python access modifier
 
