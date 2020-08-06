@@ -1,6 +1,6 @@
 ﻿---
 title:  "Flask에 필요한 Python 사용법"
-excerpt: "모듈화, 정적 메소드, 클래스 메소드"
+excerpt: "모듈, 패키지, 정적 메소드"
 
 
 categories:
