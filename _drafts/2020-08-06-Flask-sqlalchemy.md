@@ -15,7 +15,8 @@ last_modified_at: 2020-08-06TO22:30:00+09:00
   - [SQLAlchemy](#sqlalchemy)
   - [Flask-SQLAlchemy](#flask-sqlalchemy)
 - [ORM Events](#orm-events)
-  - [Attribute Events](#attribute-events)
+  - [Object States(Lifecycle)](#object-stateslifecycle)
+  - [Event Handling 방법](#event-handling-방법)
 
 ## Flask-SQLAlchemy 간단 소개
 
@@ -54,10 +55,58 @@ SQLAlchemy의 Flask 지원 확장판이 Flask-SQLAlchemy이다.
 
 ## ORM Events
 
-### Attribute Events
+[ORM Events에 대한 공식 소개 문서](https://docs.sqlalchemy.org/en/13/orm/session_events.html)
+객체나 세션의 변화에 대해서 이벤트를 통하여 트래킹을 할 수 있다.
+DB Trigger와 같은 것을, 이벤트, 이벤트 리스너 그리고 이벤트 핸들러로 구현할 수 있다.
 
-`class sqlalchemy.orm.events.AttributeEvents`
-객체 속성에 대해서 이벤트를 정의할 수 있다.
+나는 그 중 Object Lifecycle Events를 다뤄보기로 했다.
+[Object Lifecycle Events](https://docs.sqlalchemy.org/en/13/orm/session_events.html#object-lifecycle-events)
+
+위 이벤트를 다루기 위해서는 먼저, Object의 상태를 알아야 한다.
+
+### Object States(Lifecycle)
+
+[Quickie Intro to Object States](https://docs.sqlalchemy.org/en/13/orm/session_state_management.html#session-object-states)
+
+Instance의 state는 다음과 같은 종류가 있다.
+
+- Transient
+  - session에 존재하지 않는 인스턴스
+  - session.commit()해도 저장되지 않을 상태
+  - session.add()해줘야 Pending 상태가 된다
+- Pending
+  - Session.add(transient instance)
+  - 아직 flushed 되지 않은 상태
+  - 다음 flush에 Persistent 될거임
+  - session.commit()해주면 Persistent가 된다고 생각하면 된다
+- Persistent
+  - 세션에 있고, 디비에 저장된 상태
+  - pending instances가 flushed하면 persistent 상태로 전이한다.
+  - 또한 디비에서 querying 해온 인스턴스들이 persistent 상태이다.
+- Deleted
+  - pending state의 반대라고 생각하면 된다.
+  - session.delete(instance)
+- Detached
+  - db 상의 레코드와 일치하는, 혹은 일치했던 인스턴스
+  - 현재 아무런 세션에도 속하지 않은 상태
+
+객체의 현재 상태를 받아오는 방법은 다음과 같다.
+
+```python
+from sqlalchemy import inspect
+insp = inspect(my_object)
+insp.persistent
+# True
+```
+
+>일단 내 프로젝트에 실험을 해보자..
+
+### Event Handling 방법
+
+2가지 방법이 있다
+
+1. @event.listens_for()
+2. listen()
 
 첫번째 방법
 
@@ -67,5 +116,14 @@ from sqlalchemy import event
 @event.listens_for(MyClass.collection, 'append', propagate=True)
 def my_append_listener(target, value, initiator):
     print("received append evnet for target: %s" % target)
+```
+
+두번째 방법
+
+```python
+def validate_phone(target, value, oldvalue, initiator):
+  return re.sub(r'\D', '', value)
+
+listen(UserContact.phone, 'set', validate_phone, retval=True)
 ```
 
