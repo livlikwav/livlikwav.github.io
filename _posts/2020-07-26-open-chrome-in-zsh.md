@@ -4,7 +4,7 @@ excerpt: "확실히 윈도우 쓰는 것보다 리눅스랑 빠른 속도로 친
 
 
 categories:
--   macOS
+-   MacOS&Linux
 tags:
 -   macOS
 last_modified_at: 2020-07-26TO22:30:00+09:00

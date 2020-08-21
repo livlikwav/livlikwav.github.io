@@ -4,7 +4,7 @@ excerpt: "이제 카페에서 터미널 키고 콤퓨타 잘하는 척할 수 �
 
 
 categories:
--   macOS
+-   MacOS&Linux
 tags:
 -   macOS
 last_modified_at: 2020-07-03TO22:30:00+09:00
