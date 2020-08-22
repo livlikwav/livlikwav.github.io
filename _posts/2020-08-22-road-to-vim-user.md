@@ -1,5 +1,5 @@
 ﻿---
-title:  "VIM 학습일지 : '멋'을 향한 여정"
+title:  "VIM 학습일지, 멋을 향한 여정"
 excerpt: "스벅 딱 가서, 터미널 열어서 git이고 vim이고 그냥 다 ..."
 
 
@@ -7,16 +7,19 @@ categories:
 -  Tools
 tags:
 -  Vim
-last_modified_at: 2020-08-07TO20:30:00+09:00
+last_modified_at: 2020-08-22TO20:30:00+09:00
 ---
 - [Vim 공부 시작](#vim-공부-시작)
   - [참고한 글](#참고한-글)
   - [Vim의 장점](#vim의-장점)
   - [Vim 학습계획](#vim-학습계획)
-  - [Vim 설정 저장 팁](#vim-설정-저장-팁)
   - [Vim을 배우기 위한 도구들](#vim을-배우기-위한-도구들)
 - [Vim 학습 일지](#vim-학습-일지)
   - [1주차](#1주차)
+- [중도 포기 후 근황](#중도-포기-후-근황)
+  - [1. Backend REST API 개발](#1-backend-rest-api-개발)
+  - [2. Git CLI](#2-git-cli)
+  - [3. Dotfiles repo와 Shell script](#3-dotfiles-repo와-shell-script)
 
 ## Vim 공부 시작
 
@@ -65,21 +68,6 @@ Vim 배우기 4주 계획은 다음과 같았다.
    1. Vim을 하나의 언어로 생각하고 새로운 명령어를 조합하자
    2. 이 내용은 다시 [이 글](https://medium.com/@jungseobshin/vim-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%B2%95-4%EC%A3%BC-%EA%B3%84%ED%9A%8D-77f3f7e263f7)을 참고하자.
 
-### Vim 설정 저장 팁
-
-Vim 설정을 할 때 home 디렉토리에 .vim 폴더를 생성하여 아래 구조로 세팅하자.Vim의 최신 버전은 .vim 디렉토리 안에 vimrc 파일을 찾을 수 있다고 한다.
-이 하나의 폴더로 모든것을 설정할 수 있습니다.
-
-git 저장소에 방금 만든 나만의 .vim 디렉토리를 올려두면,
-어느 컴퓨터에서도 쉽게 clone을 받고, vim 설정을 할 수 있다.
-
-```markdown
-.vim/
-├── colors/   <- directory for color schemes
-├── plugin/   <- directory for standard
-└── vimrc     <- file with main config
-```
-
 ### Vim을 배우기 위한 도구들
 
 - Vimtutor
@@ -87,7 +75,7 @@ git 저장소에 방금 만든 나만의 .vim 디렉토리를 올려두면,
   - terminal에서 `$ vimtutor`
 - [VIM Adventures](https://vim-adventures.com/)
   - 3레벨 이후로는 유료다. 거의 못함.
-  - 하지만 hjkl 이동 감각 올리기에는 좋다
+  - 하지만 hjkl 이동 감각 키우기에는 좋다.
 - [Interactive Vim Tutorial](https://www.openvim.com/tutorial.html)
   - 웹 상에서 바로 가능한 튜토리얼이다
 - 그 외에도 위의 '완전 초보를 위한 Vim' 글 맨 밑에 참고할만한 자료가 많다.
@@ -108,3 +96,43 @@ git 저장소에 방금 만든 나만의 .vim 디렉토리를 올려두면,
   - 이거 꼭 vimtutor를 7일이나 해야할까..? 벌써 다 외워가기는 한다.
   - 그리고 변명같은데 그냥 VSCODE 쓰면 될거 같은데...
   - 오늘은 스피드런이었다 거의. 딱 20분정도 걸렸다.
+
+> 200812 이후 ...
+> 그렇게 열심히 이 계획을 따라서 할 줄 알았지만 ...
+> vimtutor 하는 것이 지겨워 그만뒀다..
+
+## 중도 포기 후 근황
+
+200822,
+지금까지 Vim은 계속 꾸준히 쓰고 있다.
+Vimtutor은 지겨워서 매일 이것으로 연습하는 것은 그만 뒀다.
+
+대신 Vim을 써야할 환경을 자꾸 만들었다.
+
+### 1. Backend REST API 개발
+
+현재 나는 Flask로 REST API 개발 프로젝트를 진행하고 있다.
+이 과정에서 AWS CLI나 Docker CLI를 사용하기 때문에 터미널을 사용하는 경우가 많다.
+그래서, 터미널을 열었을 때 문서를 수정할 일이 있으면 **대부분은 Vim을 사용해서 수정하면서 손에 익히려 노력했다.**
+
+### 2. Git CLI
+
+Windows 사용 시절 Git bash를 맨 처음으로 공부했지만,
+어려워서 바로 GUI인 GitKraken을 사용했다.
+
+하지만 이번 기회에 Git CLI를 다시 배워보기로 마음 먹었고,
+**기본 에디터를 Vim으로 설정해서 커밋 메시지를 작성하고 있다.**
+
+### 3. Dotfiles repo와 Shell script
+
+[참고 링크](https://blog.appkr.dev/work-n-play/dotfiles/)
+> dotfiles는 콘솔용 바이너리(e.g. gcc), 라이브러리, 애플리케이션의 설치 뿐만아니라, 그들의 설정을 잘 저장해 두었다가 컴퓨터를 빠르게 재구성하기 위한 워크플로우다.
+
+나만의 dotfiles repo를 만들면서 쉘과 더 친해졌다.
+쉘 스크립트를 짜서 설정 파일 업데이트를 자동화하기도 했는데,
+이 과정에서 **쉘 스크립트 파일을 모두 Vim으로 작성하였다.**
+
+> 결론적으로 ...
+아직 Vim이 어렵다. 솔직히 VSCode가 편한거 같다.
+하지만 Vim을 배우면서 **터미널과 Linux CLI와 빠르게 친해지는 것 같다.**
+앞으로도 꾸준히 연습할 계획이다.
