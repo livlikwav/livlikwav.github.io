@@ -2,6 +2,7 @@
 title: "livlikwav ?"
 permalink: /about/
 layout: single
+author_profile: false
 ---
 
 ![hello_mimoticon_img](/assets/images/bio_hello.png)

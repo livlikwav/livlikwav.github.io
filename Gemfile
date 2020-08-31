@@ -7,3 +7,6 @@ gem 'tzinfo'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'jekyll-admin', group: :jekyll_plugins
 gem "kramdown-parser-gfm"
+
+# dependabot secury alert
+# gem "rack", ">= 2.1.4"
