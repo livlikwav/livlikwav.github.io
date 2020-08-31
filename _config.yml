@@ -117,7 +117,7 @@ author:
     - # label: "Facebook"
       # icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
+    - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
     - label: "Tistory"
@@ -127,7 +127,7 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
+    - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
     - label: "Tistory"
