@@ -7,29 +7,38 @@ author_profile: false
 
 ![hello_mimoticon_img](/assets/images/bio_hello.png)
 
+제 기록을 위해 작성한 글들이지만,
+도움이 되었으면 좋겠습니다!
+
 ## 저를 소개합니다
 
-- 컴퓨터과학부 4학년에 재학 중입니다
-- 취미1 : 웨이트 트레이닝(꾸준한 통증 호소)
-- 취미2 : 주식(연수익 10%면 만족)
+- 서울시립대학교 컴퓨터과학부 4학년에 재학중입니다.
 
-시간이 지나고, 제가 복습하기 위해서 기록을 남깁니다.
+- (취미1) 주식투자 및 경제공부
+- (취미2) 웨이트 트레이닝(꾸준한 통증 호소)
 
 ### 해봤습니다
 
 - Java
-- HTML, CSS, JS(JQuery)
-- Android Studio(Java)
-  - Google CSE API
-  - Glide
-- Web UI Library
-  - React
 - Python
   - Jupytor Notebook, Colab
   - Pandas, Numpy, nltk.corpus, matplotlib.pyplot
   - Tensorflow 2.X, Keras
   - Selenium, bs4 (Web Crawling)
-- Node.js
+  - Flask
+  - React
+  - SQLalchemy
+- Docker
+- Flutter
+- HTML, CSS, VanilaJS
+- Android
+  - Java
+  - Google CSE API
+  - Glide
+- Web UI Library
 - Git
-  - Bash, GitKraken
+  - CLI
+  - GitKraken
+- Adobe Xd
 - StarUML
+- Postman

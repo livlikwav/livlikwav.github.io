@@ -5,9 +5,9 @@ toc: true
 toc_sticky: true
 
 categories:
--   프로젝트 기획
+-   Project planning
 tags:
--   프로젝트 기획
+-   Project planning
 last_modified_at: 2020-07-01TO03:30:00+09:00
 ---
 

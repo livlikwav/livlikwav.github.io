@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--   공부
+-   Study
 tags:
 -   선형대수
 last_modified_at: 2020-05-30TO15:30:00+09:00

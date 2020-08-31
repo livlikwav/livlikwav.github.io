@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
-  - SQL
+  - Study
 tags:
   - 알고리즘
   - 코딩테스트

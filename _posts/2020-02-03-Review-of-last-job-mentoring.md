@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
-  - 기타
+  - Etc
 tags:
   - 취업준비
 last_modified_at: 2020-02-03TO18:00:00+09:00

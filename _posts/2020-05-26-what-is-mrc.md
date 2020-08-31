@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--   NLP
+-   Study
 tags:
 -   NLP
 last_modified_at: 2020-05-26TO16:30:00+09:00

@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--   공부
+-   Study
 tags:
 -   기술면접
 last_modified_at: 2020-05-19TO22:30:00+09:00

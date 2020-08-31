@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--   프로젝트 관리
+-   Project Management
 tags:
 -   추진일정
 -   팀관리

@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
-  - 기타
+  - Etc
 tags:
   - 취업준비
   - SW마에스트로
