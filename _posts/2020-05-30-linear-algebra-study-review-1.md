@@ -1,7 +1,8 @@
 ﻿---
 title:  "선형대수 - 러너게인 정리"
 excerpt: "배경지식 ~ 3강"
-
+toc: true
+toc_sticky: true
 
 categories:
 -   공부

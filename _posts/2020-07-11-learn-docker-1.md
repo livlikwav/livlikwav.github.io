@@ -1,7 +1,8 @@
 ---
 title:  "도커 학습기 #1"
 excerpt: "Docker 기반의 DevOps 인프라 구축 WORKSHOP 1강 수업 정리"
-
+toc: true
+toc_sticky: true
 
 categories:
 -   Docker
@@ -9,51 +10,6 @@ tags:
 -   Docker
 last_modified_at: 2020-07-11TO22:30:00+09:00
 ---
-
-- [오늘의 커리큘럼](#오늘의-커리큘럼)
-- [잡담](#잡담)
-- [도커는 무엇인가](#도커는-무엇인가)
-- [도커를 써야하는 이유](#도커를-써야하는-이유)
-  - [Immutable Infrastructure](#immutable-infrastructure)
-  - [De Facto](#de-facto)
-- [도커 CE와 Enterprise의 차이](#도커-ce와-enterprise의-차이)
-  - [도커의 사용](#도커의-사용)
-- [도커의 제품군](#도커의-제품군)
-  - [Kitemetic](#kitemetic)
-  - [Docker Engine](#docker-engine)
-  - [Docker Machine](#docker-machine)
-  - [Docker Hub](#docker-hub)
-  - [Docker Trusted Registry](#docker-trusted-registry)
-  - [DUCP](#ducp)
-- [Docker Conference](#docker-conference)
-  - [DockerCon 2018 - Docker Promise](#dockercon-2018---docker-promise)
-  - [도커는 IoT 기반의 OS로 성장하고 있다](#도커는-iot-기반의-os로-성장하고-있다)
-  - [Toolbox와 Desktop 차이](#toolbox와-desktop-차이)
-- [실습 1](#실습-1)
-- [도커 아키텍쳐](#도커-아키텍쳐)
-  - [컨테이너와 하이퍼바이저](#컨테이너와-하이퍼바이저)
-  - [리눅스 컨테이너 LXC, Linux Container](#리눅스-컨테이너-lxc-linux-container)
-  - [도커의 기반 기술](#도커의-기반-기술)
-  - [Union Filesystem](#union-filesystem)
-  - [권한 수준](#권한-수준)
-- [도커 이미지](#도커-이미지)
-  - [boots](#boots)
-  - [copy-on-write CoW](#copy-on-write-cow)
-  - [도커 이미지 저장위치](#도커-이미지-저장위치)
-  - [베이스 이미지](#베이스-이미지)
-  - [도커는 이미지의 변경된 부분만 저장한다](#도커는-이미지의-변경된-부분만-저장한다)
-  - [Image Layers](#image-layers)
-  - [Dockerfile](#dockerfile)
-  - [이미지 검색](#이미지-검색)
-  - [내 이미지 만들기](#내-이미지-만들기)
-- [도커파일 치트 시트](#도커파일-치트-시트)
-  - [이미지 삭제](#이미지-삭제)
-- [도커 이미지 크기를 줄이는 방법](#도커-이미지-크기를-줄이는-방법)
-  - [Top Technologies running on Docker](#top-technologies-running-on-docker)
-  - [Sysdig 2017 survey](#sysdig-2017-survey)
-  - [도커 컨테이너는 어플리케이션이다. 서버가 아니다](#도커-컨테이너는-어플리케이션이다-서버가-아니다)
-- [실습 2](#실습-2)
-- [듣게 된 용어들, 정리할 용어들](#듣게-된-용어들-정리할-용어들)
 
 [Docker 기반의 DevOps 인프라 구축 WORKSHOP](https://www.fastcampus.co.kr/dev_workshop_devops)
 이 수업을 수강하고 있다. 비싼 수업인 만큼 1회차 수업을 듣고 나름의 정리를 한다.

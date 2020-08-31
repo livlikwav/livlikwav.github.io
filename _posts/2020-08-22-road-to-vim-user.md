@@ -1,7 +1,8 @@
 ﻿---
 title:  "VIM 학습일지, 멋을 향한 여정"
 excerpt: "스벅 딱 가서, 터미널 열어서 git이고 vim이고 그냥 다 ..."
-
+toc: true
+toc_sticky: true
 
 categories:
 -  Tools
@@ -9,17 +10,6 @@ tags:
 -  Vim
 last_modified_at: 2020-08-22TO20:30:00+09:00
 ---
-- [Vim 공부 시작](#vim-공부-시작)
-  - [참고한 글](#참고한-글)
-  - [Vim의 장점](#vim의-장점)
-  - [Vim 학습계획](#vim-학습계획)
-  - [Vim을 배우기 위한 도구들](#vim을-배우기-위한-도구들)
-- [Vim 학습 일지](#vim-학습-일지)
-  - [1주차](#1주차)
-- [중도 포기 후 근황](#중도-포기-후-근황)
-  - [1. Backend REST API 개발](#1-backend-rest-api-개발)
-  - [2. Git CLI](#2-git-cli)
-  - [3. Dotfiles repo와 Shell script](#3-dotfiles-repo와-shell-script)
 
 ## Vim 공부 시작
 

@@ -1,7 +1,8 @@
 ﻿---
 title:  "GitKraken을 지운 김에 하는 Git 복습 #1"
 excerpt: "터미널 하나로 다 해보려고 '재미삼아' 계속 도전 중!"
-
+toc: true
+toc_sticky: true
 
 categories:
 -  Tools
@@ -10,12 +11,6 @@ tags:
 last_modified_at: 2020-08-21TO22:30:00+09:00
 ---
 
-- [기록](#기록)
-  - [1.1 버전 관리](#11-버전-관리)
-  - [1.2 Goal of Git](#12-goal-of-git)
-  - [1.3 What is Git](#13-what-is-git)
-  - [1.4 Git CLI](#14-git-cli)
-  - [1.6 Git Config](#16-git-config)
 
 ### 그게 말이죠
 

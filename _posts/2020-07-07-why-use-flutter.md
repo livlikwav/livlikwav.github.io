@@ -1,7 +1,8 @@
 ---
 title:  "React-native 결제 해놓고 Flutter 하게된 썰"
 excerpt: "아는 만큼 보인다더니, 이제야 알게 되서 그렇답니다"
-
+toc: true
+toc_sticky: true
 
 categories:
 -   Flutter
@@ -10,10 +11,6 @@ tags:
 -   React-native
 last_modified_at: 2020-07-07TO22:30:00+09:00
 ---
-- [크로스플랫폼 대표주자 React-native와 Flutter](#크로스플랫폼-대표주자-react-native와-flutter)
-- [Web-RTC 라이브러리를 사용해야 한다면](#web-rtc-라이브러리를-사용해야-한다면)
-- [나의 선택은 Flutter](#나의-선택은-flutter)
-  - [참고글](#참고글)
 
 Flutter로 하라는 눈치셨지만,
 이미 React-native 강의를 결제했는 걸요...?

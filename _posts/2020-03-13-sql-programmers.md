@@ -1,6 +1,8 @@
 ﻿---
 title:  "SQL 코딩테스트 대비 by 프로그래머스"
 excerpt: "프로그래머스 SQL 고득점 kit 모든 문제 답안과 오답노트를 정리합니다. 유형별 문제를 금방 복습하는 것이 목표인 글입니다."
+toc: true
+toc_sticky: true
 
 categories:
   - SQL

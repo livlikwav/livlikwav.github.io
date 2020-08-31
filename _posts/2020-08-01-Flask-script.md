@@ -1,7 +1,8 @@
 ---
 title:  "Flask-script로 CLI에서 편하게 서버 다루기"
 excerpt: "커맨드를 관리하기 위한 라이브러리"
-
+toc: true
+toc_sticky: true
 
 categories:
 -   Flask
@@ -10,9 +11,6 @@ tags:
 -   manage.py
 last_modified_at: 2020-08-01TO22:30:00+09:00
 ---
-
-- [flask_script](#flask_script)
-  - [manage.py](#managepy)
 
 [flask_script 공식 문서](https://flask-script.readthedocs.io/en/latest/)
 > The Flask-Script extension provides support for writing external scripts in Flask. This includes running a development server, a customised Python shell, scripts to set up your database, cronjobs, and other command-line tasks that belong outside the web application itself.

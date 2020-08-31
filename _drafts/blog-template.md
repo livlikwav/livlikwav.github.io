@@ -1,7 +1,8 @@
 ---
 title:  "글 제목"
 excerpt: "글 부제목"
-
+toc: true
+toc_sticky: true
 
 categories:
 -   Java

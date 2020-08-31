@@ -1,6 +1,8 @@
 ﻿---
 title:  "TCP와 UDP의 차이"
 excerpt: "복습 겸 기술면접 준비"
+toc: true
+toc_sticky: true
 
 categories:
 -   공부

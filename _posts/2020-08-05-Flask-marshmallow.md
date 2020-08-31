@@ -1,7 +1,8 @@
 ---
 title:  "Flask-marshmallow로 편하게 데이터~객체 관리하기"
 excerpt: "serialize/deserialize/validation"
-
+toc: true
+toc_sticky: true
 
 categories:
 -   Flask

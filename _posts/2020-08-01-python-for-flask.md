@@ -1,7 +1,8 @@
 ﻿---
 title:  "Flask에 필요한 Python 사용법"
 excerpt: "모듈, 패키지, 정적 메소드"
-
+toc: true
+toc_sticky: true
 
 categories:
 -  Flask
@@ -10,16 +11,6 @@ tags:
 -  Python
 last_modified_at: 2020-08-01TO20:30:00+09:00
 ---
-- [Python Module](#python-module)
-- [Python Package](#python-package)
-  - [from ~ import ~ 주의할 점](#from--import--주의할-점)
-  - [init 파일의 용도](#init-파일의-용도)
-- [Python staticmethod](#python-staticmethod)
-  - [@staticmethod](#staticmethod)
-  - [@classmethod](#classmethod)
-  - [두 정적 메소드의 공통점 : 인스턴스에서 접근](#두-정적-메소드의-공통점--인스턴스에서-접근)
-  - [두 정적 메소드의 차이점 : 상속](#두-정적-메소드의-차이점--상속)
-  - [__name__ 변수란](#name-변수란)
 
 일단 Flask로 개발하기로 했다. 그래서 Top-down 방식으로 Flask 부터 배웠고, Python에 대한 나의 부족함이 드러나기 시작했다.(분명히 배웠었는데 ㅎㅎ)
 

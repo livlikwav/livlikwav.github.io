@@ -1,7 +1,8 @@
 ﻿---
 title:  "개발자들의 메신저, 슬랙(Slack)이란?"
 excerpt: "남들 다 쓴다고 하면 꼭 한번은 써봐야 대화가 되더라..."
-
+toc: true
+toc_sticky: true
 
 categories:
   - Tools

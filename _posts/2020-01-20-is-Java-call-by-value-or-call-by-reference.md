@@ -1,6 +1,8 @@
 ﻿---
 title:  "Java는 Call by Value일까, Call by Reference일까?"
 excerpt: "Java의 인자전달방식은 무엇일까?"
+toc: true
+toc_sticky: true
 
 categories:
   - Java

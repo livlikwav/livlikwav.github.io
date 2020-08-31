@@ -1,7 +1,8 @@
 ﻿---
 title:  "기계독해, MRC란 무엇일까"
 excerpt: "Machine Reading Comprehension; 기계독해에 대해서 정리합니다"
-
+toc: true
+toc_sticky: true
 
 categories:
 -   NLP

@@ -1,6 +1,8 @@
 ﻿---
 title:  "2020-01 동문 멘토링 참석 후기"
 excerpt: "부족한 질문들을 많이 드렸습니다."
+toc: true
+toc_sticky: true
 
 categories:
   - 기타

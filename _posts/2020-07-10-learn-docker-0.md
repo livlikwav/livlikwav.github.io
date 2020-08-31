@@ -1,7 +1,8 @@
 ---
 title:  "도커 학습기 #0"
 excerpt: "새로운 기술의 도입이, 어떤 어려움을 해결하기 위해 탄생했는지 살피기"
-
+toc: true
+toc_sticky: true
 
 categories:
 -   Docker
@@ -9,11 +10,6 @@ tags:
 -   Docker
 last_modified_at: 2020-07-10TO22:30:00+09:00
 ---
-- [너무 핫한 도커, 쿠버네티스](#너무-핫한-도커-쿠버네티스)
-- [도커 시작하기](#도커-시작하기)
-- [Getting-started](#getting-started)
-- [같이 공부한 용어들](#같이-공부한-용어들)
-  - [SQLite 란](#sqlite-란)
 
 ## 너무 핫한 도커, 쿠버네티스
 

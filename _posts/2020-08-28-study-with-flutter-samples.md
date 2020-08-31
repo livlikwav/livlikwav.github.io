@@ -1,7 +1,8 @@
 ﻿---
 title:  "예시와 함께 하는 Dart 가이드"
 excerpt: "Official Dart language samples로 Dart 빠르게 훑기"
-
+toc: true
+toc_sticky: true
 
 categories:
 -  Flutter
@@ -9,19 +10,6 @@ tags:
 -  Dart
 last_modified_at: 2020-08-28TO20:30:00+09:00
 ---
-- [빠르게 훑자 Dart](#빠르게-훑자-dart)
-  - [Hello World](#hello-world)
-  - [변수](#변수)
-  - [흐름제어문](#흐름제어문)
-  - [함수](#함수)
-  - [주석](#주석)
-  - [패키지 사용](#패키지-사용)
-  - [클래스](#클래스)
-  - [상속](#상속)
-  - [믹스인](#믹스인)
-  - [인터페이스와 추상 클래스](#인터페이스와-추상-클래스)
-  - [Async](#async)
-  - [예외처리](#예외처리)
 
 ## 빠르게 훑자 Dart
 
@@ -38,7 +26,7 @@ Language Tour, Libraries Tour도 따로 제공한다.
 
 ### Hello World
 
-```Dart
+```dart
 // Hello World
 void main() {
 	print('Hello, World!');
@@ -47,7 +35,7 @@ void main() {
 
 ### 변수
 
-```Dart
+```dart
 // 변수
 // Dart는 type-safe합니다.
 // 하지만 타입을 명시하지 않아도 됩니다.
@@ -63,7 +51,7 @@ var image = {
 
 ### 흐름제어문
 
-```Dart
+```dart
 // 흐름 제어 문
 // if-else 문
 if (year >= 2001) {
@@ -88,7 +76,7 @@ while (year < 2016) {
 
 ### 함수
 
-```Dart
+```dart
 // 함수
 // 권장 : 파라미터와 리턴값 타입을 명시하세요
 int fibonacci(int n) {
@@ -107,7 +95,7 @@ flybyObjects.where((name) => name.contains('turn')).forEach(print);
 
 ### 주석
 
-```Dart
+```dart
 // 주석
 // Dart는 //를 사용한다
 /// 문서화 주석은 ///를 사용한다
@@ -118,7 +106,7 @@ flybyObjects.where((name) => name.contains('turn')).forEach(print);
 
 ### 패키지 사용
 
-```Dart
+```dart
 // 패키지 사용
 import 'dart:math'; //코어 라이브러리
 import 'package:test/test.dart'; //외부 패키지에서의 라이브러리
@@ -128,7 +116,7 @@ import 'path/to/my_other_file.dart'; //파일
 
 ### 클래스
 
-```Dart
+```dart
 // 클래스
 // 예시는 3개의 속성, 2개의 생성자, 1개의 메소드를 갖는다. (+ 게터 메소드)
 class Spacecraft {
@@ -171,7 +159,7 @@ voyager3.describe();
 
 ### 상속
 
-```Dart
+```dart
 // 상속
 // 단일 상속만을 갖는다
 class Orbiter extends Spacecraft {
@@ -184,7 +172,7 @@ class Orbiter extends Spacecraft {
 
 ### 믹스인
 
-```Dart
+```dart
 // 믹스인
 // 믹스인이란 다중 클래스 상하관계에서 코드 재사용을 하는 방법이다
 // 다음 예시가 믹스인으로 사용할 수 있는 클래스의 예시이다
@@ -202,7 +190,7 @@ class PilotedCraft extends Spacecraft with Piloted {
 
 ### 인터페이스와 추상 클래스
 
-```Dart
+```dart
 // 인터페이스와 추상 클래스
 // Dart는 interface 키워드가 없다.
 // 모든 클래스들은 암묵적으로 인터페이스를 정의하므로, 어떠한 클래스에서도 implement 할 수 있다.
@@ -223,7 +211,7 @@ abstract class Describable {
 
 ### Async
 
-```Dart
+```dart
 // Async
 // 콜백 지옥을 피하기 위함
 // 그리고 코드를 좀 더 가독성있게 만들기 위함
@@ -263,7 +251,7 @@ Future<void> createDescriptions(Iterable<String> objects) async {
 
 ### 예외처리
 
-```Dart
+```dart
 // 예외처리
 // 예외를 발생시키려면 throw
 if (astrounauts == 0) {

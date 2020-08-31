@@ -1,7 +1,8 @@
 ---
 title:  "MacOS 터미널에서 바로 크롬 및 파인더 열기"
 excerpt: "확실히 윈도우 쓰는 것보다 리눅스랑 빠른 속도로 친해지고 있다."
-
+toc: true
+toc_sticky: true
 
 categories:
 -   MacOS&Linux
@@ -9,12 +10,6 @@ tags:
 -   macOS
 last_modified_at: 2020-07-26TO22:30:00+09:00
 ---
-
-- [터미널에서 바로 chrome 열기](#터미널에서-바로-chrome-열기)
-  - [open 명령어](#open-명령어)
-  - [이제서야 알게된 ~의 의미](#이제서야-알게된-의-의미)
-  - [터미널 alias 설정](#터미널-alias-설정)
-  - [source 명령어](#source-명령어)
 
 사람들이 맥북을 추천하는 이유 중에는, 터미널이 좋다는 말이 있었다.
 벌써 한 2달 가량 사용해 본 결과 맞는 말이었다!

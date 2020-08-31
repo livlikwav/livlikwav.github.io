@@ -1,6 +1,8 @@
 ﻿---
 title:  "에라토스테네스의 체가 모야"
 excerpt: "에라토스테네스의 체는 정말 금방인걸요?"
+toc: true
+toc_sticky: true
 
 categories:
   - Algorithm

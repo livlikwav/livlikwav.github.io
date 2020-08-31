@@ -1,6 +1,8 @@
 ﻿---
 title:  "SW마에스트로 11기 AI인적성검사 후기"
 excerpt: "마이다스아이티 제공 AI인적성검사 응시 후기입니다."
+toc: true
+toc_sticky: true
 
 categories:
   - 기타

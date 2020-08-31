@@ -1,7 +1,8 @@
 ﻿---
 title:  "Flask에 필요한 Python 사용법 2"
 excerpt: "Decorator, Docstring, 접근제어자, @property"
-
+toc: true
+toc_sticky: true
 
 categories:
 -  Flask
@@ -10,13 +11,6 @@ tags:
 -  Python
 last_modified_at: 2020-08-06TO20:30:00+09:00
 ---
-- [decorator](#decorator)
-  - [데코레이터 선언 방법](#데코레이터-선언-방법)
-  - [파라미터를 가지는 데코레이터](#파라미터를-가지는-데코레이터)
-  - [decorator와 __doc__같이 사용하기](#decorator와-__doc__같이-사용하기)
-- [Docstring](#docstring)
-- [파이썬 접근 제어자 : Python access modifier](#파이썬-접근-제어자--python-access-modifier)
-- [Python @property](#python-property)
 
 ## decorator
 
