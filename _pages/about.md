@@ -21,16 +21,16 @@ author_profile: false
 
 - Java
 - Python
-  - Jupytor Notebook, Colab
-  - Pandas, Numpy, nltk.corpus, matplotlib.pyplot
-  - Tensorflow 2.X, Keras
-  - Selenium, bs4 (Web Crawling)
   - Flask
-  - React
   - SQLalchemy
+  - Tensorflow 2.X, Keras
+  - Pandas, Numpy, nltk.corpus, matplotlib.pyplot
+  - Selenium, bs4 (Web Crawling)
+  - Jupytor Notebook, Colab
 - Docker
 - Flutter
 - HTML, CSS, VanilaJS
+  - React
 - Android
   - Java
   - Google CSE API
