@@ -156,8 +156,10 @@ RPC는 사실 예전부터 존재했던 기술이다. 하지만 **이렇게 띠�
    1. JSON, XML로 데이터 전달하는 것에 비해 크기를 획기적으로 줄인다.
    2. 밑의 예제에서 json은 82byte인데 이를 33byte로 줄인다.
 3. Proto File로 서비스와 메시지를 정의하고, 여러가지 언어로 코드를 자동 생성한다.
-   1. grpctools-protoc으로 코드 생성
-   2. polyglot(약 10가지 언어 지원)
+   1. REST에서는 표준이 없기 때문에 OpenAPI(Swagger)등의 기술로 별도로 약속을 정리해둬야한다. 하지만 gRPC는 proto 파일로 명확하게 확인가능하다.
+   2. 이는 클라이언트-서버 간 협업에서도 큰 장점이다.
+   3. grpctools-protoc으로 언어별로 코드 자동 생성
+   4. polyglot(약 10가지 언어 지원)
 
 ![http2](https://postfiles.pstatic.net/MjAxOTEyMTlfMjM4/MDAxNTc2NzM1MjU1ODc3.XB2ldLI8SUdIi2XmB1WJ8VRyekjzDZvBE2Oa-LDidpwg.AICWtHri0jrx9DAe9zSlBcwI0B42qu5Z8MLM84L_UzYg.PNG.n_cloudplatform/2.png?type=w966)
 > HTTP/1.1 vs HTTP/2
@@ -167,5 +169,19 @@ RPC는 사실 예전부터 존재했던 기술이다. 하지만 **이렇게 띠�
 
 ### gRPC의 단점
 
-현재 **브라우저에서 사용할 수는 없는 것 같다.**
-따라서 백엔드에서 **서버-서버 통신**에 자주 사용되고, **MSA**에서 자주 사용된다.
+![image](https://user-images.githubusercontent.com/44190293/91995860-456cc680-ed73-11ea-9cf9-d617f1796027.png)
+> HTTP API와 gRPC 비교
+
+- 제한된 브라우저 지원
+  - grpc-web을 필요로 한다.
+  - 따라서 현재 브라우저에는 잘 사용하지 않는다.
+  - gRPC는 MSA 구조에서 서버-서버 통신에 자주 사용된다.
+- 데이터 전달 포맷이 사람이 읽을 수 없는 형태이다.
+  - 당연하게도 string format인 JSON이 아니라 protocol buffer가 바이너리 포맷으로 인코딩하기 때문이다.
+
+> 제시된 장점에 비해, 단점이 별로 없는 것 같다.
+
+### gRPC 추천 시나리오
+
+![image](https://user-images.githubusercontent.com/44190293/92132161-c2667180-ee41-11ea-9aca-d2e7a03750aa.png)
+> MS 자료의 gRPC 추천 사례
