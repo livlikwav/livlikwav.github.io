@@ -33,6 +33,7 @@ last_modified_at: 2020-09-03TO20:30:00+09:00
 - [[NBP 기술&경험] 시대의 흐름, gRPC 깊게 파고들기 #1](https://blog.naver.com/n_cloudplatform/221751268831)
 - [[NBP기술&경험]시대의 흐름, gRPC 깊게 파고들기 #2](https://blog.naver.com/n_cloudplatform/221751405158)
 - [google - HTTP/2 소개](https://developers.google.com/web/fundamentals/performance/http2?hl=ko)
+- [Microsoft - Compare gRPC services with HTTP APIs](https://docs.microsoft.com/ko-kr/aspnet/core/grpc/comparison?view=aspnetcore-3.1)
 - [스프링캠프 2017 [Day1 B5] : gㅏ벼운 RPC, gRPC(빠르고 가벼운 Polyglot RPC framework)](https://www.youtube.com/watch?v=sKWy7BJxIas&t=2447s)
 
 ## gRPC 이전의 배경
