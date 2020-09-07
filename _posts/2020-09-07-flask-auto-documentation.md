@@ -15,13 +15,13 @@ last_modified_at: 2020-09-07TO20:30:00+09:00
 
 Flasgger를 적용하여 API 문서 작성.
 
-- 현재 Flask와 Flask-restful, Flask-sqlalchemy를 이용해서 REST API를 개발
-- Swagger UI version 3과 OAS 3.0을 지원하는 Flasgger라는 라이브러리를 통해 API 문서를 작성
-- 실제 프로젝트 소스에 적용하기 전에는 Swagger UI Editor라는 웹 OAS 에디터를 통해 작성
+- 현재 Flask와 **Flask-restful**, Flask-sqlalchemy를 이용해서 REST API를 개발
+- **Swagger UI version 3과 OAS 3.0을 지원**하는 **Flasgger**라는 라이브러리를 통해 API 문서를 작성
+- 실제 프로젝트 소스에 적용하기 전에는 **Swagger UI Editor**라는 웹 OAS 에디터를 통해 작성
 - Spring에 Swagger를 적용하는 것처럼 **'문서 자동화는 이루지 못함'(메소드별 자동 yml 매핑 정도..)'**
-  - 하지만 프로젝트 내부에 Docs 파일도 함께 관리할 수 있음에 감사
+  - 하지만 **프로젝트 내부에 API 문서도 함께 관리할 수 있음**에 감사
 
-> 사용방법은 뒤에 ...
+> Flasgger의 소개 및 사용방법은 뒤에 ...
 
 ## 문서화의 필요성을 여실히 느끼다
 
@@ -35,15 +35,14 @@ Flasgger를 적용하여 API 문서 작성.
   - 설계 수정을 해야하는데 문서가 없으면 한눈에 보기가 어려움
 - 그래서 결국 Auto Documentation을 할 방법을 다시 찾아봄.
 
-> 느낀점 : 처음에 문서 유지 보수 생각을 잘 하고 문서화 잘 해놓자.
+> 느낀점 : 처음에 문서 유지 보수 방안을 잘 정해놓자.
 > 안그래도 할게 많은데 문서를 다시 작성하는 것은 너무 귀찮았고,
-> 또 초기 설계대로 되는 법이 없어서 무조건 고치게 된다.
+> 또, 초기 설계대로 되는 법이 없어서 무조건 고치게 된다.
 
 ## Flask auto documentation
 
-'Flask 문서 자동화'나 'Flask auto documentation'이라고 검색하면,
-라이브러리가 나오지 않거나 Flask-apispec이 나온다.
-'Flask Swagger'등의 다른 키워드로 검색을 해도 Star가 높은 repo는 나오지 않는다.
+'Flask 문서 자동화', 'Flask auto documentation' 그리고 'Flask Swagger'등의 키워드로 검색하면,
+마땅한 라이브러리나 참고할 글들이 나오지 않는다.
 
 내가 찾았던 방법들은 다음과 같다.
 
@@ -55,19 +54,19 @@ Flasgger를 적용하여 API 문서 작성.
 
 ### Flask-restplus
 
-Flask의 REST 개발 라이브러리로 크게 2가지가 있다.
+**Flask REST API 개발을 시작하지 않았다면 Flask-restplus도 고려해보길 바란다.**
+
+Flask의 REST 개발 라이브러리는 크게 2가지가 있다.
 Flask-restful과 Flask-restplus이다.
 
 나는 restful이 코드가 간결해보여서 택했는데, restful은 swagger를 기본적으로 지원해주지 않았다.
 
-하지만 restplus는, 별다른 세팅없이 개발한대로 자동으로 문서화 되도록 지원이 잘 되어있었다.
+하지만 restplus는, **별다른 세팅없이 개발한대로 자동으로 문서화 되도록 지원**이 잘 되어있었다.
 더불어서, 참고할 한글 블로그 글도 있었다.
-
-따라서 아직 Flask REST API 개발을 시작하지 않았다면 Flask-restplus도 고려해보길 바란다.
 
 ### Flask-restful-swagger
 
-현재 Flask-restful을 사용하고 있어서, 이 라이브러리를 위한 Swagger 라이브러리를 먼저 찾았다.
+현재 Flask-restful을 사용하고 있어서, 이 라이브러리를 위한 Swagger 라이브러리를 또 찾아보았다.
 
 [Flask-restful-swagger repo](https://github.com/rantav/flask-restful-swagger)
 > flask-restful-swagger is a wrapper for flask-restful which enables swagger support.
@@ -87,8 +86,8 @@ Model에는 @swagger.model 데코레이터만 달면 되었다.
 
 ### flask-restful-swagger 실패
 
-예상되는 원인은, 해당 라이브러리의 Factory pattern에 대한 지원이 없는 것 같았다.
-init_app()를 검색해보았지만, 검색 결과가 없었다.
+예상되는 원인은, 해당 라이브러리의 Factory pattern에 대한 지원이 없기 때문인 것 같다.
+init_app()는 오류가 발생했고, 구글링해도 검색 결과가 없었다(**나만 못했을 확률도 높다**).
 
 ```python
     api.init_app(app)
@@ -101,7 +100,7 @@ init_app()를 검색해보았지만, 검색 결과가 없었다.
     )
 ```
 
-위와 같이 그냥 해보았지만, 웹 상에 Swagger UI 자체가 렌더링되지 않았다.
+위와 같이 다른 방법으로도 시도해 보았지만, 웹 상에 Swagger UI 자체가 렌더링되지 않았다.
 > /api/spec, /api/spec.json, /api/spec.html 다 404 Error...
 
 ### Flask-apispec 보류
@@ -112,7 +111,7 @@ init_app()를 검색해보았지만, 검색 결과가 없었다.
 [Flask-apispec repo](https://github.com/jmcarp/flask-apispec)
 > flask-apispec is a lightweight tool for building REST APIs in Flask. flask-apispec uses webargs for request parsing, marshmallow for response formatting, and apispec to automatically generate Swagger markup. You can use flask-apispec with vanilla Flask or a fuller-featured framework like Flask-RESTful.
 
-예시 Quickstart 코드는 다음과 같다.
+예시 Quickstart 코드는 다음과 같았다.
 
 ```python
 from flask import Flask
@@ -136,7 +135,7 @@ def get_pets(**kwargs):
     return Pet.query.filter_by(**kwargs)
 ```
 
-다음과 같은 이유로 이 라이브러리는 사용을 보류했다.
+하지만, 다음과 같은 이유로 이 라이브러리는 사용을 보류했다.
 
 - Flask-restful을 지원한다고 하지만 설명이 부족하다(예시 코드를 찾을 수 없다)
 - 사용하지 않고 있는 webargs 라는 라이브러리를 사용한다
@@ -150,7 +149,7 @@ def get_pets(**kwargs):
 > Easy OpenAPI specs and Swagger UI for your Flask API
 
 README.md와 examples 코드들이 빠방했고, issue와 stack-overflow도 검색 결과가 있었다.
-그 결과로, (위에 작성한대로) Flasgger를 사용하기로 결정하였다.
+그 결과로, Flasgger를 사용하기로 결정했다.
 
 나름대로 정리한 소개 및 사용법은 다음과 같다.
 
@@ -173,8 +172,8 @@ README.md 에서는 크게 다음과 같이 나누고 있다.
 - Using dictionaries as raw specs
 - Using Marshmallow schemas
 
-이 중에서 나는 external YAML file을 작성해서 사용하고 있고,
-Flask-restful의 Resource를 yml 파일과 자동 매핑해주는 기능과 doc_dir 설정을 사용하고 있다.
+나는 docstring이나 dictionary가 아닌 yml 파일로 spec을 작성했다.
+Marshmallow는 내가 flask-marshmallow를 사용하고 있어서 도전하지 않았다.
 
 ### OAS 3.0 설정
 
@@ -203,6 +202,9 @@ class Config:
 ```python
 # project/app/__init__.py
 
+...
+from config import config as Config
+
 db = SQLAlchemy()
 ma = Marshmallow()
 api = Api()
@@ -228,12 +230,17 @@ def create_app(config):
 
 ### doc_dir 설정
 
-Flask-restful의 Resource의 메소드마다 docstring으로 작성하는 것이 아니라,
-yml 파일이 들어갈 폴더를 만들어서, Swagger()에 설정해놓으면 자동으로 매핑해준다.
+doc_dir를 설정하면 Resource의 get, post 등의 메소드와 yml 파일을 자동으로 매핑해준다.
+이를 통해 yml 파일만 별도의 폴더로 관리할 수 있다.
 
 - 예시 Resource
 
 ```python
+# project/app/resources/user.py
+
+...
+from flask_restful import Resource
+
 class LoginApi(Resource):
     def post(self):
         ...
@@ -257,7 +264,7 @@ swagger_config = {
 ```
 
 - project/app/docs/ 디렉토리와 파일을 다음과 같이 만들어 준다.
-  - yml파일은 post, get, put, delete 맡게 적어준다.
+  - yml파일은 post, get, put, delete등 이름에 맞게 적어준다.
 
 ![image](https://user-images.githubusercontent.com/44190293/92398890-5008d080-f164-11ea-940d-a59de0a07a69.png)
 
@@ -294,3 +301,9 @@ requestBody:
 - localhost:5000/apidocs에서 확인할 수 있다.
 
 ![image](https://user-images.githubusercontent.com/44190293/92399401-33b96380-f165-11ea-92e6-4a3f071e0893.png)
+
+### 덧붙여서 ...
+
+또한 OAS 3.0 Spec의 Components, info, tags 등의 정보도 물론 지정해줄 수 있다. template dict를 만들어 Swagger 객체 생성시 지정해주면 된다.
+
+공식 문서를 참고하더라도 헷갈리는 분이 있으시다면, 댓글 달아주시면 해당 부분에 대한 설명도 향후에 추가하도록 하겠다 :)
