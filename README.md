@@ -2,6 +2,6 @@
 
 [livlikwav.github.io](https://livlikwav.github.io)
 
-## for TIL
+## TIL
 
 Today I Learned

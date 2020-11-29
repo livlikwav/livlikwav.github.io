@@ -20,8 +20,7 @@ title                    : "Keep on trying"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Liv Lik Wav"
-description              : "major in computer science, Univ of Seoul.
-                            Interested at programming, investment, weighttraining"
+description              : "major in computer science, Univ of Seoul."
 url                      : "https://livlikwav.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "livlikwav/blog-comment" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -110,7 +109,7 @@ analytics:
 author:
   name             : "livlikwav"
   avatar           : "/assets/images/bio_photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Univ of Seoul, Computer Science"
+  bio              : "서울시립대학교 컴퓨터과학부<br>SW마에스트로 11기 연수생"
   location         : "Seoul, Korea"
   email            : "gaonrudal@gmail.com"
   links:
