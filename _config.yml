@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Keep on trying"
+title                    : "livlikwav 개발 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Liv Lik Wav"
-description              : "major in computer science, Univ of Seoul."
+name                     : "livlikwav"
+description              : "Developer who loves stable and flexible structure"
 url                      : "https://livlikwav.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "livlikwav/blog-comment" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,27 +109,27 @@ analytics:
 author:
   name             : "livlikwav"
   avatar           : "/assets/images/bio_photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "서울시립대학교 컴퓨터과학부<br>SW마에스트로 11기 연수생"
-  location         : "Seoul, Korea"
+  bio              : "안정적이고 유연한 구조를 좋아합니다<br>현재는 SpringBoot, K8s, Golang에<br>관심을 갖는 중입니다."
+  location         : "서울, 대한민국"
   email            : "gaonrudal@gmail.com"
   links:
     - # label: "Facebook"
       # icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "Github"
+    - label: "깃허브"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
-    - label: "Tistory"
+    - label: "개발 외 블로깅"
       icon: "fas fa-fw fa-pen-square"
       url: "https://livlikwav.tistory.com/"
 
 # Site Footer
 footer:
   links:
-    - label: "Github"
+    - label: "깃허브"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
-    - label: "Tistory"
+    - label: "개발 외 블로깅"
       icon: "fas fa-fw fa-pen-square"
       url: "https://livlikwav.tistory.com/"
 
