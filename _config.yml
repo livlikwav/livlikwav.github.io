@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "livlikwav"
   avatar           : "/assets/images/bio_photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "안정적이고 유연한 구조를 좋아합니다<br>현재는 SpringBoot, K8s, Golang에<br>관심을 갖는 중입니다."
+  bio              : "좋은 질문을 하고, 덜 중요한 일들을 잘 미루고 싶어요!"
   location         : "서울, 대한민국"
   email            : "gaonrudal@gmail.com"
   links:
