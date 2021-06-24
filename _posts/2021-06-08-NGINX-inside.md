@@ -1,5 +1,5 @@
 ﻿---
-title:  "NGINX가 왜 좋을까? 동시 연결 수와 이벤트 주도 설계"
+title:  "NGINX 내부 구조 이해하기: 동시 연결 수와 이벤트 주도 설계"
 excerpt: "Apache와 NGINX의 차이, concurrent connections를 위한 event-driven architecture와 non-blocking I/O"
 toc: true
 toc_sticky: true
@@ -12,7 +12,7 @@ tags:
 last_modified_at: 2021-06-08TO13:00:00+09:00
 ---
 
-## NGINX 깊게 알기
+## NGINX 내부 구조 이해하기
 
 웹 서버 개발을 한다면, 무조건 자주 보이는 그 이름 NGINX.  
 막연하게 Apache보다 가볍고, 성능이 좋다고 알고 있었는데,  
