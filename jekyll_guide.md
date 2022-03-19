@@ -14,6 +14,7 @@
 > 가만~히 냅둔 블로그 오랜만에 와서 다시 수정하려고 하면, 이상한 의존성 문제가 발생한다;;
 > 그냥 하라는대로만 하자...
 
+- [jekyll official docs](https://jekyllrb.com/docs/)
 - [Mac에서 Gem::FilePermissionError 에러 발생시 해결 방법](https://jojoldu.tistory.com/288)
 - [Bundler::GemNotFound 해결 방법](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=cyydo96&logNo=221588642260)
 - [왜 jekyll serve 가 안될까?](https://frhyme.github.io/others/jekyll_serve_not_work/)
