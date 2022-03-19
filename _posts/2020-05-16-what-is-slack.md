@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
-  - Tools
+  - Etc
 tags:
   - 슬랙
 last_modified_at: 2020-05-16TO00:30:00+09:00

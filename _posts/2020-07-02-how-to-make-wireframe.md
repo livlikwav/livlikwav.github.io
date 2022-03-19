@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--   Project planning
+-   Planning
 tags:
 -   디자인
 -   Adobe Xd

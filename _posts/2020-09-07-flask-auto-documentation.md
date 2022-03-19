@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--  Flask
+-  Python
 tags:
 -  Swagger
 last_modified_at: 2020-09-07TO20:30:00+09:00

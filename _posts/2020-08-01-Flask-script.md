@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--   Flask
+-   Python
 tags:
 -   Flask-script
 -   manage.py

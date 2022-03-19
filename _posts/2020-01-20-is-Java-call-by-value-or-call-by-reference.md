@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
-  - Java
+  - Languages
 tags:
   - 자바
 last_modified_at: 2020-01-20TO20:00:00+09:00

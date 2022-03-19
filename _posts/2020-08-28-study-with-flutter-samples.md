@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--  Flutter
+-  Languages
 tags:
 -  Dart
 last_modified_at: 2020-08-28TO20:30:00+09:00

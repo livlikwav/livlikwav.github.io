@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--   Flutter
+-   Languages
 tags:
 -   Flutter
 -   React-native

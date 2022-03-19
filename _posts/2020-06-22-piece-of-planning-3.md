@@ -5,9 +5,9 @@ toc: true
 toc_sticky: true
 
 categories:
--   Project planning
+-   Planning
 tags:
--   Project planning
+-   Planning
 last_modified_at: 2020-06-22TO03:30:00+09:00
 ---
 

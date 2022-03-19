@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
--  Tools
+-  Etc
 tags:
 -  Vim
 last_modified_at: 2020-08-22TO20:30:00+09:00
