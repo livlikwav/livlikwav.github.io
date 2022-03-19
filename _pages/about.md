@@ -1,46 +1,27 @@
 ﻿---
-title: "livlikwav ?"
-permalink: /about/
+title: "About ?"
 layout: single
+permalink: /about/
 author_profile: false
 ---
 
 ![hello_mimoticon_img](/assets/images/bio_hello.png)
 
-새로운 문제를 발견하고, 정의하고, 함께 해결하는 것을 좋아합니다.  
-개발 뿐만 아니라 기획, 디자인, 경제 등 다양한 분야에 관심이 많습니다.  
 매일의 행복과 성장을 놓치지 않고 살아가기를 희망합니다.
+개발 뿐만 아니라 다양한 분야에 관심이 많습니다.
+(늘 꽉 차있는 유튜브 나중에 볼 동영상 리스트...)
 
 ## 저를 소개합니다
 
+- 카카오엔터프라이즈 kakao i cloud APaaS셀 서버 개발자
+- 네이버 클로바 NSML팀 Software engineer 인턴
 - 소프트웨어 마에스트로 11기 최종 우수자 (Top 15)
-  - 반려견 지능형 배변훈련 서비스 '굿푸피'
 - 서울시립대학교 컴퓨터과학부 졸업
 
-### 20 -> 취미
-
-1. 경제 공부
-2. 웨이트 트레이닝(꾸준한 통증 호소)
-3. 온동네 카페 탐방, 맛집 탐방
-
-~~잘 놀아야 잘 산다!~~  
-
-### 80 -> 성장
-
-요즘은 이런 것들에 관심을 두고 있어요!
+### 기술 스택
 
 - Golang
 - Kubernetes
-- DevOps
-  - MLOps
-- gRPC
+- Docker, gRPC, Envoy
 
-이런 것도 잘하고 싶어요!
-
-- Shell script, Makefile
-- Pytorch
-- Python, Flask
-- Dart, Flutter
-- ipadOS
-
-업무적인 능력뿐 아니라, 좋은 사람이 되고 싶어요!
+좋은 개발자 이전에, 일을 잘하는 동료가 되고 싶어요.

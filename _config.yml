@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "livlikwav 개발 블로그"
+title                    : "live like wave"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "livlikwav"
-description              : "Developer who loves stable and flexible structure"
+description              : "dev blog"
 url                      : "https://livlikwav.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "livlikwav/blog-comment" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/bio_photo.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/livlikwav_logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/sea.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -109,27 +109,27 @@ analytics:
 author:
   name             : "livlikwav"
   avatar           : "/assets/images/bio_photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "좋은 질문을 하고, 덜 중요한 일들을 잘 미루고 싶어요!"
+  bio              : "끝까지 생각하기, 좋은 질문하기, 우선순위 정하기"
   location         : "서울, 대한민국"
   email            : "gaonrudal@gmail.com"
   links:
     - # label: "Facebook"
       # icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "깃허브"
+    - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
-    - label: "개발 외 블로깅"
+    - label: "일상"
       icon: "fas fa-fw fa-pen-square"
       url: "https://livlikwav.tistory.com/"
 
 # Site Footer
 footer:
   links:
-    - label: "깃허브"
+    - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/livlikwav"
-    - label: "개발 외 블로깅"
+    - label: "일상"
       icon: "fas fa-fw fa-pen-square"
       url: "https://livlikwav.tistory.com/"
 
