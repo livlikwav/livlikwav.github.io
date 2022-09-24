@@ -11,3 +11,5 @@ gem "kramdown-parser-gfm"
 # dependabot secury alert
 gem "rack", ">= 2.1.4"
 gem "webrick", "~> 1.7"
+
+gem "kramdown-syntax-coderay", "~> 1.0"
